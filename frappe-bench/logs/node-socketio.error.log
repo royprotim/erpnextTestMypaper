@@ -1,0 +1,35 @@
+Fri, 12 May 2017 15:03:30 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Tue, 16 May 2017 06:17:24 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Tue, 16 May 2017 09:26:30 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Sat, 20 May 2017 07:15:57 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Fri, 26 May 2017 13:09:39 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Sat, 27 May 2017 16:04:07 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)
+Tue, 30 May 2017 16:58:36 GMT express deprecated res.sendfile: Use res.sendFile instead at apps/frappe/socketio.js:20:7
+Error: ENOENT: no such file or directory, stat '/home/frappe/frappe-bench/index.html'
+    at Error (native)

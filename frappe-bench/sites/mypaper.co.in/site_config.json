@@ -1,0 +1,17 @@
+{
+ "db_name": "1bd3e0294da19198", 
+ "db_password": "k32wSc0WEo6a6Ehs", 
+ "developer_mode": 1, 
+ "domains": [
+  "test.mypaper.co.in"
+ ], 
+ "encryption_key": "2WQM60A9Nyp6rEqBfhJbhiKOh03m-tBUwtg4v8e4FtI=", 
+ "limits": {
+  "space_usage": {
+   "backup_size": 7.0, 
+   "database_size": 24.98, 
+   "files_size": 4.0, 
+   "total": 35.98
+  }
+ }
+}

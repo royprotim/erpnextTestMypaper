@@ -1,0 +1,15 @@
+{
+ "domains": [
+  "test.mypaper.co.in"
+ ], 
+ "db_password": "k32wSc0WEo6a6Ehs", 
+ "db_name": "1bd3e0294da19198", 
+ "limits": {
+  "space_usage": {
+   "database_size": 14.68, 
+   "files_size": 2.0, 
+   "total": 19.68, 
+   "backup_size": 3.0
+  }
+ }
+}

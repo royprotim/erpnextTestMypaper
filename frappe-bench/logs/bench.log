@@ -1,0 +1,83 @@
+2017-05-11 20:49:58,570 INFO getting app erpnext
+2017-05-11 20:49:58,575 INFO git clone https://github.com/frappe/erpnext.git --branch master --depth 1 --origin upstream
+2017-05-11 20:50:56,684 INFO installing erpnext
+2017-05-11 20:50:56,685 INFO ./env/bin/pip install -q  -e ./apps/erpnext --no-cache-dir
+2017-05-11 20:52:10,962 INFO sudo /usr/bin/supervisorctl reread
+2017-05-11 20:52:11,320 INFO sudo /usr/bin/supervisorctl update
+2017-05-11 20:52:12,099 INFO sudo systemctl reload nginx
+2017-05-11 20:52:16,804 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-11 21:07:14,402 INFO npm install socket.io redis express superagent cookie
+2017-05-11 21:08:00,897 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-11 21:14:22,558 INFO updating bench
+2017-05-11 21:14:22,558 INFO git pull
+2017-05-11 21:14:31,402 INFO ./env/bin/pip install Pillow
+2017-05-11 21:18:51,344 INFO updating bench
+2017-05-11 21:18:51,345 INFO git pull
+2017-05-11 21:18:59,800 INFO ./env/bin/pip install Pillow
+2017-05-11 21:19:01,069 INFO pulling frappe
+2017-05-11 21:19:01,077 INFO git pull  upstream master
+2017-05-11 21:19:03,780 INFO find . -name "*.pyc" -delete
+2017-05-11 21:19:03,852 INFO pulling erpnext
+2017-05-11 21:19:03,859 INFO git pull  upstream master
+2017-05-11 21:19:06,665 INFO find . -name "*.pyc" -delete
+2017-05-11 21:19:06,726 INFO ./env/bin/pip install --upgrade pip
+2017-05-11 21:19:08,142 INFO ./env/bin/pip install -q -r /home/frappe/.bench/requirements.txt
+2017-05-11 21:19:22,044 INFO ./env/bin/pip install -q -r ./apps/frappe/requirements.txt
+2017-05-11 21:19:27,550 INFO ./env/bin/pip install -q -r ./apps/erpnext/requirements.txt
+2017-05-11 21:19:53,445 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-11 21:34:59,856 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-11 21:37:54,355 INFO updating bench
+2017-05-11 21:37:54,355 INFO git pull
+2017-05-11 21:38:02,531 INFO ./env/bin/pip install Pillow
+2017-05-11 21:38:03,205 INFO pulling frappe
+2017-05-11 21:38:03,208 INFO git pull  upstream master
+2017-05-11 21:38:05,877 INFO find . -name "*.pyc" -delete
+2017-05-11 21:38:05,906 INFO pulling erpnext
+2017-05-11 21:38:05,909 INFO git pull  upstream master
+2017-05-11 21:38:08,568 INFO find . -name "*.pyc" -delete
+2017-05-11 21:38:08,654 INFO ./env/bin/pip install --upgrade pip
+2017-05-11 21:38:09,512 INFO ./env/bin/pip install -q -r /home/frappe/.bench/requirements.txt
+2017-05-11 21:38:10,024 INFO ./env/bin/pip install -q -r ./apps/frappe/requirements.txt
+2017-05-11 21:38:13,636 INFO ./env/bin/pip install -q -r ./apps/erpnext/requirements.txt
+2017-05-11 21:38:27,371 INFO sudo supervisorctl restart frappe:
+2017-05-11 21:48:43,636 INFO sudo supervisorctl restart frappe:
+2017-05-11 21:53:16,581 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-11 21:55:15,123 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-11 22:30:22,588 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-12 09:04:36,981 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-13 14:45:55,855 INFO getting app PK
+2017-05-13 14:45:55,860 INFO git clone https://github.com/PawanMeh/PK  --depth 1 --origin upstream
+2017-05-13 14:45:58,885 INFO installing paperkart
+2017-05-13 14:45:58,885 INFO ./env/bin/pip install -q  -e ./apps/paperkart --no-cache-dir
+2017-05-13 14:46:06,290 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-15 17:55:21,311 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-16 13:50:28,023 INFO getting app paypal_integration
+2017-05-16 13:50:28,026 INFO git clone https://github.com/frappe/paypal_integration  --depth 1 --origin upstream
+2017-05-16 13:50:32,951 INFO installing paypal_integration
+2017-05-16 13:50:32,952 INFO ./env/bin/pip install -q  -e ./apps/paypal_integration --no-cache-dir
+2017-05-16 13:50:39,444 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-16 15:32:20,920 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-17 07:43:26,779 INFO getting app erpnext_shopify
+2017-05-17 07:43:26,791 INFO git clone https://github.com/frappe/erpnext_shopify.git  --depth 1 --origin upstream
+2017-05-17 07:43:31,124 INFO installing erpnext_shopify
+2017-05-17 07:43:31,124 INFO ./env/bin/pip install -q  -e ./apps/erpnext_shopify --no-cache-dir
+2017-05-17 07:43:38,201 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-17 18:07:36,574 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-17 18:40:46,425 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-19 22:20:02,462 INFO updating bench
+2017-05-19 22:20:02,462 INFO git pull
+2017-05-19 22:20:33,619 INFO updating bench
+2017-05-19 22:20:33,619 INFO git pull
+2017-05-19 22:21:18,382 INFO updating bench
+2017-05-19 22:21:18,383 INFO git pull
+2017-05-20 00:47:38,356 INFO updating bench
+2017-05-20 00:47:38,356 INFO git pull
+2017-05-25 16:13:56,173 INFO creating new app newapp
+2017-05-25 16:16:19,179 INFO installing newapp
+2017-05-25 16:16:19,180 INFO ./env/bin/pip install -q  -e ./apps/newapp --no-cache-dir
+2017-05-30 11:12:15,147 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-30 12:00:54,308 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-30 12:26:15,770 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-30 12:28:36,855 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-30 12:30:02,670 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:
+2017-05-31 11:24:01,889 INFO sudo supervisorctl restart frappe-bench-workers: frappe-bench-web:

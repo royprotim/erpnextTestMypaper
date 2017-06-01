@@ -1,0 +1,1630 @@
+[DEBUG] 2017-05-20 07:41:07,247 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 07:45:07,513 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 07:49:07,793 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 07:53:08,073 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 07:57:08,354 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:01:08,644 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 08:01:08,902 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 08:01:08.810396-127.0.0.1-847.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 08:01:08.810396-127.0.0.1-847.json'
+[DEBUG] 2017-05-20 08:05:08,894 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:09:09,173 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:13:09,441 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:17:09,714 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:21:09,984 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:25:10,270 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:29:10,520 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 08:30:26,853 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"mypaperkart@gmail.com\",\"naming_series\":\"ITEM-\",\"item_group\":\"Art Paper\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"gsm\":100,\"net_weight\":\"26.8\",\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"length_in\":36,\"length_cm\":91.5}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 08:30:26,914 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[ERROR] 2017-05-20 08:31:08,512 | /home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/communication/email.py:
+Site: mypaper.co.in
+{
+ "attachments": [], 
+ "cc": [], 
+ "communication_name": "6a3e756ee8", 
+ "lang": "en-GB", 
+ "print_format": "", 
+ "print_html": "", 
+ "recipients": [
+  "hello@openetech.com"
+ ]
+}
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/communication/email.py", line 425, in sendmail
+    recipients=recipients, cc=cc)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/communication/communication.py", line 211, in _notify
+    _notify(self, print_html, print_format, attachments, recipients, cc)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/core/doctype/communication/email.py", line 163, in _notify
+    is_notification=True if doc.sent_or_received =="Received" else False
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 418, in sendmail
+    communication=communication, now=now, read_receipt=read_receipt, is_notification=is_notification)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/email/queue.py", line 61, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/email/smtp.py", line 58, in get_outgoing_email_account
+    frappe.OutgoingEmailError)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red')
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 306, in msgprint
+    _raise_exception()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 279, in _raise_exception
+    raise raise_exception, encode(msg)
+OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+[DEBUG] 2017-05-20 08:33:10,766 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 08:36:34,426 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Art Paper\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"shopify_description\":\"\",\"description\":\"\",\"gsm\":100,\"net_weight\":\"26.8\",\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"length_in\":36,\"length_cm\":91.5,\"manufacturer\":\"Century\",\"brand\":\"Century\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 08:36:34,430 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 08:37:11,037 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 08:37:36,267 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Art Paper\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"shopify_description\":\"\",\"description\":\"\",\"gsm\":100,\"net_weight\":\"26.8\",\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"length_in\":36,\"length_cm\":91.5,\"manufacturer\":\"\",\"brand\":\"\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 08:37:36,273 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 08:41:11,294 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:45:11,577 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:49:11,837 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:53:12,105 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 08:57:12,379 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:01:12,662 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 09:01:13,015 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 09:01:12.949492-127.0.0.1-03a.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 09:01:12.949492-127.0.0.1-03a.json'
+[DEBUG] 2017-05-20 09:05:12,942 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:09:13,241 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 09:11:17,703 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cached_timestamp": "", 
+ "cmd": "frappe.desk.form.load.getdoctype", 
+ "doctype": "Naming Series", 
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 71, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 82, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 22, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 32, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 42, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 152, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 184, in load_doctype_module
+    raise ImportError, 'Module import failed for {0} ({1})'.format(doctype, module_name)
+ImportError: Module import failed for Naming Series (erpnext.setup.doctype.naming_series.naming_series)
+[ERROR] 2017-05-20 09:11:17,765 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-20 09:11:17.704118-27.4.204.87-a91
+[ERROR] 2017-05-20 09:11:56,577 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cached_timestamp": "", 
+ "cmd": "frappe.desk.form.load.getdoctype", 
+ "doctype": "Naming Series", 
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 71, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 82, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 22, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 32, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 42, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 152, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 184, in load_doctype_module
+    raise ImportError, 'Module import failed for {0} ({1})'.format(doctype, module_name)
+ImportError: Module import failed for Naming Series (erpnext.setup.doctype.naming_series.naming_series)
+[ERROR] 2017-05-20 09:11:56,582 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-20 09:11:56.578307-27.4.204.87-f4e
+[ERROR] 2017-05-20 09:13:04,588 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cached_timestamp": "", 
+ "cmd": "frappe.desk.form.load.getdoctype", 
+ "doctype": "Naming Series", 
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 71, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 82, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 22, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 32, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 42, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 152, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 184, in load_doctype_module
+    raise ImportError, 'Module import failed for {0} ({1})'.format(doctype, module_name)
+ImportError: Module import failed for Naming Series (erpnext.setup.doctype.naming_series.naming_series)
+[ERROR] 2017-05-20 09:13:04,592 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-20 09:13:04.588472-27.4.204.87-c84
+[DEBUG] 2017-05-20 09:13:13,482 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:17:13,746 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:21:14,010 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:25:14,282 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:29:14,553 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:33:14,834 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:37:15,114 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:41:15,390 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:45:15,694 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 09:46:26,244 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Packaging Board\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"description\":\"\",\"gsm\":250,\"net_weight\":\"13.4\",\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"length_in\":36,\"length_cm\":91.5}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 09:46:26,303 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 09:49:15,950 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 09:50:42,900 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cached_timestamp": "", 
+ "cmd": "frappe.desk.form.load.getdoctype", 
+ "doctype": "Naming Series", 
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 71, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 82, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 20, in get_meta
+    meta = frappe.cache().hget("form_meta", doctype, lambda: FormMeta(doctype))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 171, in hget
+    value = generator()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 20, in <lambda>
+    meta = frappe.cache().hget("form_meta", doctype, lambda: FormMeta(doctype))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 32, in __init__
+    self.load_assets()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 42, in load_assets
+    self.load_templates()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/meta.py", line 152, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/modules/utils.py", line 184, in load_doctype_module
+    raise ImportError, 'Module import failed for {0} ({1})'.format(doctype, module_name)
+ImportError: Module import failed for Naming Series (erpnext.setup.doctype.naming_series.naming_series)
+[ERROR] 2017-05-20 09:50:42,915 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-20 09:50:42.910746-27.4.204.87-b15
+[DEBUG] 2017-05-20 09:53:16,220 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 09:57:16,486 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 09:57:49,643 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Art Paper\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"description\":\"\",\"gsm\":250,\"net_weight\":\"16.1\",\"bulk\":\"NaN\",\"width_in\":25,\"width_cm\":63.5,\"length_in\":40,\"length_cm\":101.5,\"manufacturer\":\"Century\",\"brand\":\"Century\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 09:57:49,711 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[ERROR] 2017-05-20 10:00:24,535 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Art Paper\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"description\":\"\",\"gsm\":250,\"net_weight\":\"16.1\",\"bulk\":\"NaN\",\"width_in\":25,\"width_cm\":63.5,\"length_in\":40,\"length_cm\":101.5,\"manufacturer\":\"Century\",\"brand\":\"Century\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 10:00:24,538 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 10:01:16,783 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 10:01:17,021 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 10:01:16.959336-127.0.0.1-f06.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 10:01:16.959336-127.0.0.1-f06.json'
+[DEBUG] 2017-05-20 10:05:17,054 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:09:17,322 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:13:17,597 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:17:17,874 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:21:18,145 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:25:18,426 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:29:18,705 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:33:18,982 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:37:19,262 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:41:19,513 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:45:19,794 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:49:20,063 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:53:20,338 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 10:57:20,610 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:01:20,922 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 11:01:21,183 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 11:01:21.115680-127.0.0.1-7a7.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 11:01:21.115680-127.0.0.1-7a7.json'
+[DEBUG] 2017-05-20 11:05:21,193 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:09:21,462 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:13:21,745 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:17:22,026 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:21:22,306 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:25:22,588 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:29:22,857 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:33:23,121 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:37:23,389 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:41:23,654 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:45:23,915 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:49:24,196 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:53:24,466 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 11:57:24,733 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:01:25,005 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 12:01:25,254 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 12:01:25.190688-127.0.0.1-a78.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 12:01:25.190688-127.0.0.1-a78.json'
+[DEBUG] 2017-05-20 12:05:25,286 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:09:25,565 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:13:25,850 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:17:26,126 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:21:26,388 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:25:26,654 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:29:26,914 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:33:27,203 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:37:27,477 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:41:27,765 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:45:28,045 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:49:28,318 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:53:28,570 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 12:57:28,833 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:01:29,157 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 13:01:29,466 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 13:01:29.383643-127.0.0.1-704.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 13:01:29.383643-127.0.0.1-704.json'
+[DEBUG] 2017-05-20 13:05:29,438 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:09:29,714 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:13:29,994 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 13:13:30,509 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Packaging Board\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"shopify_description\":\"\",\"description\":\"\",\"gsm\":100,\"net_weight\":\"26.8\",\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"length_in\":36,\"length_cm\":91.5}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 13:13:30,695 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 13:17:30,252 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 13:20:23,379 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Packaging Board\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"description\":\"\",\"gsm\":170,\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"net_weight\":\"45.5\",\"length_in\":36,\"length_cm\":91.5}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 13:20:23,383 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 13:21:30,553 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 13:21:30,743 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Item\",\"name\":\"New Item 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"naming_series\":\"ITEM-\",\"item_group\":\"Packaging Board\",\"stock_uom\":\"Kg\",\"shade\":\"\",\"grain\":\"\",\"is_stock_item\":1,\"sync_with_shopify\":0,\"finish\":\"\",\"default_warehouse\":\"Delhi-1 - MPL\",\"end_of_life\":\"2099-12-31\",\"default_material_request_type\":\"Purchase\",\"valuation_method\":\"\",\"has_variants\":0,\"variant_based_on\":\"Item Attribute\",\"is_purchase_item\":1,\"min_order_qty\":0,\"country_of_origin\":\"India\",\"is_sales_item\":1,\"publish_in_hub\":0,\"synced_with_hub\":0,\"description\":\"\",\"gsm\":170,\"bulk\":\"NaN\",\"width_in\":23,\"width_cm\":58.5,\"net_weight\":\"45.5\",\"length_in\":36,\"length_cm\":91.5}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 204, in insert
+    self.db_insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/base_document.py", line 299, in db_insert
+    ), d.values())
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/database.py", line 138, in sql
+    self._cursor.execute(query, values)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'nan' in 'field list'")
+[ERROR] 2017-05-20 13:21:30,751 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: 'connection'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 81, in get_snapshot
+    call = inspect.formatargvalues(args, varargs, varkw, locals, formatvalue=lambda value: '={}'.format(pydoc.text.repr(value)))
+  File "/usr/lib/python2.7/inspect.py", line 888, in formatargvalues
+    specs.append(strseq(args[i], convert, join))
+  File "/usr/lib/python2.7/inspect.py", line 843, in strseq
+    return convert(object)
+  File "/usr/lib/python2.7/inspect.py", line 885, in convert
+    return formatarg(name) + formatvalue(locals[name])
+KeyError: 'connection'
+[DEBUG] 2017-05-20 13:25:30,838 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:29:31,109 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:33:31,390 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:37:31,660 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:41:31,926 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:45:32,174 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:49:32,453 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:53:32,732 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 13:57:33,008 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:01:33,301 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 14:01:33,618 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 14:01:33.544213-127.0.0.1-bbd.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 14:01:33.544213-127.0.0.1-bbd.json'
+[DEBUG] 2017-05-20 14:05:33,577 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:09:33,828 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:13:34,083 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:17:34,356 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:21:34,657 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:25:34,925 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:29:35,205 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:33:35,459 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:37:35,730 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:41:36,014 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:45:36,299 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:49:36,582 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:53:36,863 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 14:57:37,138 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:01:37,410 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 15:01:37,652 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 15:01:37.582812-127.0.0.1-62c.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 15:01:37.582812-127.0.0.1-62c.json'
+[DEBUG] 2017-05-20 15:05:37,686 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:09:37,956 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:13:38,237 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:17:38,518 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:21:38,797 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:25:39,072 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:29:39,347 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:33:39,630 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:37:39,922 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:41:40,205 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:45:40,481 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:49:40,751 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:53:41,021 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 15:57:41,308 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:01:41,590 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 16:01:41,879 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 16:01:41.772292-127.0.0.1-e52.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 16:01:41.772292-127.0.0.1-e52.json'
+[DEBUG] 2017-05-20 16:05:41,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:09:42,101 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:13:42,365 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:17:42,610 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:21:42,894 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:25:43,175 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:29:43,461 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:33:43,730 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:37:44,013 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:41:44,253 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:45:44,534 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:49:44,807 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:53:45,089 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 16:57:45,361 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:01:45,650 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 17:01:45,973 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 17:01:45.907535-127.0.0.1-bf5.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 17:01:45.907535-127.0.0.1-bf5.json'
+[DEBUG] 2017-05-20 17:05:45,914 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:09:46,162 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:13:46,425 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:17:46,688 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:21:46,961 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:25:47,233 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:29:47,494 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:33:47,774 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:37:48,050 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:41:48,311 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:45:48,553 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:49:48,832 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:53:49,109 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 17:57:49,390 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:01:49,687 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 18:01:49,958 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 18:01:49.888708-127.0.0.1-566.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 18:01:49.888708-127.0.0.1-566.json'
+[DEBUG] 2017-05-20 18:05:49,957 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:09:50,278 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:13:50,553 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:17:50,833 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:21:51,110 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:25:51,402 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:29:51,686 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:33:51,943 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:37:52,219 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:41:52,477 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:45:52,754 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:49:53,038 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:53:53,313 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 18:57:53,567 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:01:53,859 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 19:01:54,090 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 19:01:54.026237-127.0.0.1-f3c.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 19:01:54.026237-127.0.0.1-f3c.json'
+[DEBUG] 2017-05-20 19:05:54,134 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:09:54,414 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:13:54,698 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:17:54,962 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:21:55,238 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:25:55,493 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:29:55,769 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:33:56,049 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:37:56,326 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:41:56,606 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:45:56,885 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:49:57,157 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:53:57,440 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 19:57:57,721 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:01:58,026 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 20:01:58,265 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 20:01:58.202101-127.0.0.1-6dc.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 20:01:58.202101-127.0.0.1-6dc.json'
+[DEBUG] 2017-05-20 20:05:58,306 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:09:58,559 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:13:58,826 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:17:59,076 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:21:59,345 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:25:59,614 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:29:59,893 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:34:00,160 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:38:00,434 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:42:00,713 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:46:00,962 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:50:01,248 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:54:01,533 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 20:58:01,814 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:02:02,098 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 21:02:02,334 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 21:02:02.268820-127.0.0.1-3e8.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 21:02:02.268820-127.0.0.1-3e8.json'
+[DEBUG] 2017-05-20 21:06:02,344 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:10:02,586 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:14:02,853 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:18:03,105 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:22:03,382 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:26:03,668 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:30:03,950 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:34:04,230 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:38:04,501 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:42:04,762 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:46:05,041 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:50:05,313 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:54:05,590 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 21:58:05,861 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:02:06,157 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 22:02:06,389 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 22:02:06.322023-127.0.0.1-3c3.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 22:02:06.322023-127.0.0.1-3c3.json'
+[DEBUG] 2017-05-20 22:06:06,406 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:10:06,630 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:14:06,874 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:18:07,093 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:22:07,377 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:26:07,662 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:30:07,941 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:34:08,213 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:38:08,489 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:42:08,767 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:46:09,022 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:50:09,297 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:54:09,579 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 22:58:09,874 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:02:10,170 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-20 23:02:10,404 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 23:02:10.338557-127.0.0.1-ccb.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-20 23:02:10.338557-127.0.0.1-ccb.json'
+[DEBUG] 2017-05-20 23:06:10,441 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:10:10,730 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:14:10,986 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:18:11,268 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:22:11,545 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:26:11,824 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:30:12,090 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:34:12,375 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:38:12,632 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:42:12,906 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:46:13,193 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:50:13,493 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:54:13,774 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-20 23:58:14,069 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:02:14,428 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-21 00:02:15,551 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 00:02:15.482616-127.0.0.1-e05.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 00:02:15.482616-127.0.0.1-e05.json'
+[DEBUG] 2017-05-21 00:06:14,682 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:10:14,962 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:14:15,241 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:18:15,530 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:22:15,822 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:26:16,097 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:30:16,358 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:34:16,602 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:38:16,869 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:42:17,125 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:46:17,396 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:50:17,653 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:54:17,937 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 00:58:18,221 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:02:18,491 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-21 01:02:18,730 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 01:02:18.662727-127.0.0.1-4de.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 01:02:18.662727-127.0.0.1-4de.json'
+[DEBUG] 2017-05-21 01:06:18,777 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:10:19,249 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:14:19,498 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:18:19,763 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:22:20,050 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:26:20,318 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:30:20,595 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:34:20,873 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:38:21,150 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:42:21,389 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:46:21,665 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:50:21,933 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:54:22,209 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 01:58:22,494 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:02:22,789 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-21 02:02:23,057 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 02:02:22.978732-127.0.0.1-932.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 02:02:22.978732-127.0.0.1-932.json'
+[DEBUG] 2017-05-21 02:06:23,075 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:10:23,329 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:14:23,599 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:18:23,857 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:22:24,120 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:26:24,385 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:30:24,657 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:34:24,933 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:38:25,206 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:42:25,485 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:46:25,767 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:50:26,042 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:54:26,322 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 02:58:26,593 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:02:26,899 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-21 03:02:27,156 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 03:02:27.097711-127.0.0.1-21a.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-21 03:02:27.097711-127.0.0.1-21a.json'
+[DEBUG] 2017-05-21 03:06:27,174 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:10:27,457 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:14:27,806 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:18:28,085 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:22:28,356 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:26:28,608 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:30:28,858 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:34:29,126 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-21 03:38:29,394 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in

@@ -1,0 +1,6 @@
+[ERROR] 2017-05-19 02:03:04,079 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-19 02:03:03.982505-127.0.0.1-45d.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-19 02:03:03.982505-127.0.0.1-45d.json'

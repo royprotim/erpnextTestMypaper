@@ -1,0 +1,1727 @@
+[ERROR] 2017-05-30 12:00:32,679 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 887, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 672, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named newapp.payment_entry_2
+[ERROR] 2017-05-30 12:01:39,691 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:01:39,757 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:01:39.691793-122.160.159.227-1be
+[ERROR] 2017-05-30 12:02:28,419 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:02:28,426 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:02:28.420375-122.160.159.227-862
+[ERROR] 2017-05-30 12:05:58,458 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:05:58,465 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:05:58.459072-122.160.159.227-7a0
+[ERROR] 2017-05-30 12:06:14,442 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00001"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:06:14,449 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:06:14.443162-122.160.159.227-399
+[ERROR] 2017-05-30 12:06:25,304 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "aaa0171f87"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:06:25,309 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:06:25.305072-122.160.159.227-cd5
+[ERROR] 2017-05-30 12:10:46,881 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:10:46,885 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:10:46.882049-122.160.159.227-724
+[ERROR] 2017-05-30 12:10:57,510 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:10:57,514 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:10:57.510502-122.160.159.227-a08
+[ERROR] 2017-05-30 12:11:19,130 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:11:19,135 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:11:19.131197-122.160.159.227-e60
+[ERROR] 2017-05-30 12:11:31,091 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:11:31,098 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:11:31.091870-122.160.159.227-559
+[ERROR] 2017-05-30 12:11:43,195 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:11:43,200 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:11:43.196313-122.160.159.227-b96
+[ERROR] 2017-05-30 12:12:26,754 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"docstatus\":0,\"doctype\":\"Payment Entry\",\"name\":\"New Payment Entry 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"protimr16@gmail.com\",\"naming_series\":\"PE-.#####\",\"payment_type\":\"Receive\",\"posting_date\":\"2017-05-30\",\"company\":\"MyPaperKart Pvt Ltd\",\"paid_from_account_currency\":\"INR\",\"paid_to_account_currency\":\"INR\",\"allocate_payment_amount\":1,\"account_payee\":\"Yes\",\"bearer\":\"Yes\",\"account_type\":\"Savings\",\"mode_of_payment\":\"Cheque\",\"paid_to\":\"IDFC Bank - MPL\",\"paid_to_account_balance\":12345,\"base_received_amount\":789789,\"unallocated_amount\":789789,\"difference_amount\":0,\"target_exchange_rate\":1,\"party_type\":\"Customer\",\"party\":\"hello organization 3\",\"paid_from\":\"Debtors - MPL\",\"source_exchange_rate\":1,\"paid_from_account_balance\":0,\"party_balance\":0,\"references\":[],\"total_allocated_amount\":0,\"base_total_allocated_amount\":0,\"paid_amount\":789789,\"base_paid_amount\":789789,\"received_amount\":789789,\"reference_no\":\"7897\",\"reference_date\":\"2017-05-31\",\"ifsc_code\":\"ABHY0070998\",\"city\":\"DAUDPUR\",\"branch\":\"DAUDPUR\",\"micr\":\"NA\",\"contact\":null,\"state\":\"BIHAR\",\"bank_name\":\"ANDHRA BANK\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 253, in _save
+    self.insert()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 181, in insert
+    self.check_permission("create")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 145, in check_permission
+    if not self.has_permission(permtype):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:12:26,762 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:12:26.754637-122.160.159.227-b0b
+[ERROR] 2017-05-30 12:15:48,248 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:15:48,252 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:15:48.248957-122.160.159.227-f61
+[ERROR] 2017-05-30 12:21:37,340 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:21:37,346 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:21:37.341505-122.160.159.227-0df
+[ERROR] 2017-05-30 12:23:37,402 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:23:37,407 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:23:37.403249-122.160.159.227-095
+[ERROR] 2017-05-30 12:23:57,581 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:23:57,586 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:23:57.582310-122.160.159.227-86e
+[ERROR] 2017-05-30 12:24:24,575 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:24:24,579 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:24:24.576119-122.160.159.227-4c4
+[ERROR] 2017-05-30 12:24:35,329 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00004"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:24:35,335 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:24:35.329837-122.160.159.227-215
+[ERROR] 2017-05-30 12:24:40,878 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00001"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+TypeError: set_branch() takes exactly 1 argument (0 given)
+[ERROR] 2017-05-30 12:24:40,883 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:24:40.879257-122.160.159.227-1b3
+[ERROR] 2017-05-30 12:27:23,988 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00001"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 887, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 672, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named newapp.payment_entry_2
+[ERROR] 2017-05-30 12:27:24,050 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:27:23.988529-122.160.159.227-055
+[ERROR] 2017-05-30 12:29:14,244 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00001"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 887, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 672, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named newapp.payment_entry_2
+[ERROR] 2017-05-30 12:29:14,296 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:29:14.244611-122.160.159.227-dfb
+[ERROR] 2017-05-30 12:29:53,498 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc", 
+ "doctype": "Payment Entry", 
+ "name": "PE-00001"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/load.py", line 35, in getdoc
+    if not doc.has_permission("read"):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 155, in has_permission
+    return frappe.has_permission(self.doctype, permtype, self, verbose=verbose)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 500, in has_permission
+    out = frappe.permissions.has_permission(doctype, ptype, doc=doc, verbose=verbose, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 93, in has_permission
+    controller_perm = has_controller_permissions(doc, ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/permissions.py", line 302, in has_controller_permissions
+    controller_permission = frappe.call(frappe.get_attr(method), doc=doc, ptype=ptype, user=user)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 887, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 672, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named newapp.payment_entry_2
+[ERROR] 2017-05-30 12:29:53,502 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 12:29:53.498905-122.160.159.227-7df
+[ERROR] 2017-05-30 14:31:09,236 | /home/frappe/frappe-bench/apps/frappe/frappe/app.py:
+Site: mypaper.co.in
+Form Dict: {
+ "action": "Save", 
+ "cmd": "frappe.desk.form.save.savedocs", 
+ "doc": "{\"attachment_limit\":1,\"modified_by\":\"Administrator\",\"name\":\"gmail.com\",\"email_id\":\"mypaperkart@gmail.com\",\"creation\":\"2017-05-13 11:32:07.842691\",\"modified\":\"2017-05-16 09:32:21.615323\",\"smtp_server\":\"smtp.gmail.com\",\"domain_name\":\"gmail.com\",\"use_tls\":1,\"idx\":14,\"doctype\":\"Email Domain\",\"use_imap\":0,\"use_ssl\":1,\"owner\":\"Administrator\",\"docstatus\":0,\"email_server\":\"pop.gmail.com\",\"smtp_port\":\"587\",\"__last_sync_on\":\"2017-05-30T08:59:19.134Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/app.py", line 55, in application
+    response = frappe.handler.handle()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 21, in handle
+    data = execute_cmd(cmd)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 907, in call
+    return fn(*args, **newargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/desk/form/save.py", line 22, in savedocs
+    doc.save()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 230, in save
+    return self._save(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 280, in _save
+    self.run_post_save_methods()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 789, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 666, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 891, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 874, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/model/document.py", line 660, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 78, in on_update
+    frappe.throw(e)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 316, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red')
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/__init__.py", line 305, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: TimestampMismatchError('Error: Document has been modified after you have opened it (2017-05-30 14:30:21.983170, 2017-05-30 14:30:25.935387). Please refresh to get the latest document.',) is not JSON serializable
+[ERROR] 2017-05-30 14:31:09,419 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2017-05-30 14:31:09.238793-49.248.29.163-36e
+[DEBUG] 2017-05-31 11:23:42,214 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:28:36,460 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:32:36,770 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:36:37,089 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:40:37,416 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:44:37,701 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:48:37,987 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:52:38,309 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 11:56:38,613 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:00:38,960 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-31 12:00:39,595 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-31 12:00:39.416339-127.0.0.1-53a.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-31 12:00:39.416339-127.0.0.1-53a.json'
+[DEBUG] 2017-05-31 12:04:39,259 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:08:39,549 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:12:39,862 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:16:40,126 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:20:40,396 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:24:40,661 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:28:40,930 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:32:41,218 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:36:41,494 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:40:41,780 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:44:42,065 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:48:42,318 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:52:42,566 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 12:56:42,825 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:00:43,094 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[ERROR] 2017-05-31 13:00:43,300 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-31 13:00:43.243228-127.0.0.1-11e.json'
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/error.py", line 38, in make_error_snapshot
+    with open(encode(snapshot_file_path), 'wb') as error_file:
+IOError: [Errno 13] Permission denied: './mypaper.co.in/error-snapshots/2017-05-31 13:00:43.243228-127.0.0.1-11e.json'
+[DEBUG] 2017-05-31 13:04:43,366 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:08:43,642 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:12:43,925 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:16:44,182 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:20:44,457 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:24:44,695 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:28:44,961 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:32:45,245 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:36:45,521 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:40:45,793 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:44:46,103 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:48:46,369 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:52:46,618 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 13:56:46,898 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:00:47,182 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:04:47,473 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:08:47,760 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:12:48,078 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:16:48,369 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:20:48,657 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:24:48,941 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:28:49,218 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:32:49,497 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:36:49,757 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:40:50,048 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:44:50,290 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:48:50,569 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:52:50,857 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 14:56:51,153 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:00:51,451 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:04:51,710 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:08:51,971 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:12:52,235 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:16:52,538 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:20:52,820 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:24:53,097 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:28:53,377 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:32:53,625 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:36:53,884 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:40:54,138 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:44:54,417 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:48:54,694 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:52:54,969 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 15:56:55,249 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:00:55,545 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:04:55,810 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:08:56,097 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:12:56,398 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:16:56,658 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:20:56,955 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:24:57,241 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:28:57,518 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:32:57,798 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:36:58,062 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:40:58,346 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:44:58,614 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:48:58,885 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:52:59,155 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 16:56:59,422 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:00:59,709 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:05:00,003 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:09:00,278 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:13:00,549 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:17:00,833 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:21:01,098 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:25:01,350 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:29:01,621 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:33:01,890 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:37:02,163 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:41:02,439 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:45:02,718 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:49:02,986 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:53:03,265 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 17:57:03,508 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:01:03,814 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:05:04,073 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:09:04,349 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:13:04,627 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:17:04,862 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:21:05,117 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:25:05,361 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:29:05,642 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:33:05,917 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:37:06,197 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:41:06,473 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:45:06,727 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:49:06,985 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:53:07,267 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 18:57:07,553 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:01:07,850 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:05:08,153 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:09:08,440 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:13:08,717 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:17:08,990 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:21:09,253 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:25:09,517 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:29:09,780 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:33:10,029 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:37:10,269 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:41:10,549 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:45:10,818 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:49:11,099 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:53:11,382 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 19:57:11,645 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:01:11,903 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:05:12,169 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:09:12,424 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:13:12,669 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:17:12,950 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:21:13,217 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:25:13,489 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:29:13,737 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:33:13,993 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:37:14,277 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:41:14,554 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:45:14,829 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:49:15,077 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:53:15,334 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 20:57:15,577 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:01:15,835 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:05:16,109 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:09:16,393 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:13:16,667 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:17:16,946 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:21:17,202 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:25:17,453 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:29:17,718 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:33:17,997 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:37:18,274 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:41:18,557 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:45:18,821 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:49:19,085 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:53:19,342 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 21:57:19,618 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:01:19,892 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:05:20,162 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:09:20,437 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:13:20,705 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:17:20,971 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:21:21,246 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:25:21,517 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:29:21,781 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:33:22,053 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:37:22,315 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:41:22,554 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:45:22,812 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:49:23,081 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:53:23,353 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 22:57:23,639 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:01:23,941 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:05:24,209 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:09:24,445 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:13:24,723 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:17:24,985 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:21:25,257 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:25:25,542 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:29:25,802 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:33:26,076 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:37:26,350 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:41:26,630 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:45:26,897 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:49:27,177 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:53:27,432 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-05-31 23:57:27,722 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:01:28,067 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:05:28,345 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:09:28,618 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:13:28,897 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:17:29,159 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:21:29,418 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:25:29,672 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:29:29,944 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:33:30,233 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:37:30,515 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:41:30,794 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:45:31,059 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:49:31,332 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:53:31,582 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 00:57:31,857 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:01:32,136 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:05:32,406 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:09:32,690 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:13:32,955 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:17:33,192 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:21:33,430 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:25:33,710 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:29:33,994 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:33:34,279 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:37:34,557 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:41:34,821 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:45:35,097 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:49:35,357 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:53:35,636 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 01:57:35,905 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:01:36,196 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:05:36,469 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:09:36,832 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:13:37,203 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:17:37,529 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:21:37,847 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:25:38,190 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:29:38,506 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:33:38,823 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:37:39,125 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:41:39,435 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:45:39,737 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:49:40,053 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:53:40,371 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 02:57:40,646 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:01:41,009 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:05:41,322 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:09:41,650 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:13:41,975 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:17:42,273 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:21:42,567 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:25:42,889 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:29:43,199 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:33:43,521 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:37:43,839 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:41:44,131 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:45:44,407 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:49:44,735 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:53:45,053 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 03:57:45,385 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:01:45,710 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:05:46,026 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:09:46,333 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:13:46,645 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:17:46,962 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:21:47,277 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:25:47,582 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:29:47,884 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:33:48,193 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:37:48,504 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:41:48,826 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:45:49,137 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:49:49,445 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:53:49,758 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 04:57:50,073 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:01:50,423 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:05:50,717 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:09:51,029 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:13:51,337 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:17:51,641 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:21:51,966 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:25:52,287 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:29:52,609 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:33:52,935 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:37:53,243 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:41:53,563 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:45:53,867 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:49:54,187 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:53:54,486 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 05:57:54,791 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:01:55,140 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:05:55,451 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:09:55,749 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:13:56,077 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:17:56,379 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:21:56,682 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:25:56,989 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:29:57,283 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:33:57,591 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:37:57,905 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:41:58,217 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:45:58,513 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:49:58,813 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:53:59,117 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 06:57:59,433 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:01:59,789 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:06:00,085 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:10:00,377 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:14:00,684 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:18:01,001 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:22:01,317 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:26:01,659 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:30:01,977 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:34:02,293 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:38:02,609 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:42:02,917 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:46:03,226 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:50:03,528 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:54:03,827 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 07:58:04,129 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 08:02:04,439 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 08:06:04,747 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 08:10:05,057 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in
+[DEBUG] 2017-06-01 08:14:05,385 | /home/frappe/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: mypaper.co.in
+Queued events for site mypaper.co.in

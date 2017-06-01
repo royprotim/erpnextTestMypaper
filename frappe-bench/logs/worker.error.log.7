@@ -1,0 +1,79 @@
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 79, in <module>
+    main()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 16, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 157, in start_worker
+    start_worker(queue)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 106, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 433, in work
+    self.register_birth()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 250, in register_birth
+    if self.connection.exists(self.key) and \
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 855, in exists
+    return self.execute_command('EXISTS', name)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 578, in execute_command
+    connection.send_command(*args)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 563, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 538, in send_packed_command
+    self.connect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:11000. Cannot assign requested address.
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 79, in <module>
+    main()
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 16, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 722, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 697, in main
+    rv = self.invoke(ctx)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 895, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 535, in invoke
+    return callback(*args, **kwargs)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 157, in start_worker
+    start_worker(queue)
+  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 106, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 433, in work
+    self.register_birth()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 250, in register_birth
+    if self.connection.exists(self.key) and \
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 855, in exists
+    return self.execute_command('EXISTS', name)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 578, in execute_command
+    connection.send_command(*args)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 563, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 538, in send_packed_command
+    self.connect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 442, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 99 connecting to localhost:11000. Cannot assign requested address.
