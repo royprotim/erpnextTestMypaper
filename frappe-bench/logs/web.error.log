@@ -4373,3 +4373,862 @@ fatal: Not a git repository (or any of the parent directories): .git
 [2017-06-01 13:34:19 +0000] [6390] [INFO] Booting worker with pid: 6390
 [2017-06-01 13:48:57 +0000] [6390] [INFO] Worker exiting (pid: 6390)
 [2017-06-01 13:48:57 +0000] [6471] [INFO] Booting worker with pid: 6471
+[2017-06-01 16:18:53 +0000] [8690] [INFO] Starting gunicorn 19.7.1
+[2017-06-01 16:18:53 +0000] [8690] [INFO] Listening at: http://127.0.0.1:8000 (8690)
+[2017-06-01 16:18:53 +0000] [8690] [INFO] Using worker: sync
+[2017-06-01 16:18:53 +0000] [8747] [INFO] Booting worker with pid: 8747
+[2017-06-01 17:31:50 +0000] [8747] [INFO] Worker exiting (pid: 8747)
+[2017-06-01 17:31:50 +0000] [9519] [INFO] Booting worker with pid: 9519
+[2017-06-01 18:01:30 +0000] [9519] [INFO] Worker exiting (pid: 9519)
+[2017-06-01 18:01:31 +0000] [10776] [INFO] Booting worker with pid: 10776
+[2017-06-01 18:45:28 +0000] [10776] [INFO] Worker exiting (pid: 10776)
+[2017-06-01 18:45:29 +0000] [11190] [INFO] Booting worker with pid: 11190
+[2017-06-01 19:03:14 +0000] [11190] [INFO] Worker exiting (pid: 11190)
+[2017-06-01 19:03:14 +0000] [11372] [INFO] Booting worker with pid: 11372
+[2017-06-01 20:00:35 +0000] [11372] [INFO] Worker exiting (pid: 11372)
+[2017-06-01 20:00:35 +0000] [11645] [INFO] Booting worker with pid: 11645
+[2017-06-01 21:58:49 +0000] [11645] [INFO] Worker exiting (pid: 11645)
+[2017-06-01 21:58:49 +0000] [12272] [INFO] Booting worker with pid: 12272
+[2017-06-01 22:45:23 +0000] [12272] [INFO] Worker exiting (pid: 12272)
+[2017-06-01 22:45:23 +0000] [12544] [INFO] Booting worker with pid: 12544
+[2017-06-01 23:31:19 +0000] [12544] [INFO] Worker exiting (pid: 12544)
+[2017-06-01 23:31:19 +0000] [12789] [INFO] Booting worker with pid: 12789
+[2017-06-02 01:12:46 +0000] [12789] [INFO] Worker exiting (pid: 12789)
+[2017-06-02 01:12:46 +0000] [13618] [INFO] Booting worker with pid: 13618
+[2017-06-02 02:01:54 +0000] [13618] [INFO] Worker exiting (pid: 13618)
+[2017-06-02 02:01:54 +0000] [13854] [INFO] Booting worker with pid: 13854
+[2017-06-02 02:31:22 +0000] [13854] [INFO] Worker exiting (pid: 13854)
+[2017-06-02 02:31:22 +0000] [14022] [INFO] Booting worker with pid: 14022
+[2017-06-02 03:07:52 +0000] [14022] [INFO] Worker exiting (pid: 14022)
+[2017-06-02 03:07:52 +0000] [14244] [INFO] Booting worker with pid: 14244
+[2017-06-02 03:24:11 +0000] [14244] [INFO] Worker exiting (pid: 14244)
+[2017-06-02 03:24:11 +0000] [14324] [INFO] Booting worker with pid: 14324
+[2017-06-02 03:24:11 +0000] [14324] [INFO] Worker exiting (pid: 14324)
+[2017-06-02 03:24:11 +0000] [14325] [INFO] Booting worker with pid: 14325
+[2017-06-02 03:24:11 +0000] [14325] [INFO] Worker exiting (pid: 14325)
+[2017-06-02 03:24:12 +0000] [14326] [INFO] Booting worker with pid: 14326
+[2017-06-02 03:24:12 +0000] [14326] [INFO] Worker exiting (pid: 14326)
+[2017-06-02 03:24:12 +0000] [14327] [INFO] Booting worker with pid: 14327
+[2017-06-02 03:24:12 +0000] [14327] [INFO] Worker exiting (pid: 14327)
+[2017-06-02 03:24:12 +0000] [14328] [INFO] Booting worker with pid: 14328
+[2017-06-02 03:24:12 +0000] [14328] [INFO] Worker exiting (pid: 14328)
+[2017-06-02 03:24:12 +0000] [14329] [INFO] Booting worker with pid: 14329
+[2017-06-02 03:24:13 +0000] [14329] [INFO] Worker exiting (pid: 14329)
+[2017-06-02 03:24:13 +0000] [14330] [INFO] Booting worker with pid: 14330
+[2017-06-02 03:24:13 +0000] [14330] [INFO] Worker exiting (pid: 14330)
+[2017-06-02 03:24:13 +0000] [14331] [INFO] Booting worker with pid: 14331
+[2017-06-02 03:24:13 +0000] [14331] [INFO] Worker exiting (pid: 14331)
+[2017-06-02 03:24:13 +0000] [14332] [INFO] Booting worker with pid: 14332
+[2017-06-02 03:24:13 +0000] [14332] [INFO] Worker exiting (pid: 14332)
+[2017-06-02 03:24:13 +0000] [14333] [INFO] Booting worker with pid: 14333
+[2017-06-02 03:24:14 +0000] [14333] [INFO] Worker exiting (pid: 14333)
+[2017-06-02 03:24:14 +0000] [14334] [INFO] Booting worker with pid: 14334
+[2017-06-02 03:24:14 +0000] [14334] [INFO] Worker exiting (pid: 14334)
+[2017-06-02 03:24:14 +0000] [14335] [INFO] Booting worker with pid: 14335
+[2017-06-02 03:24:14 +0000] [14335] [INFO] Worker exiting (pid: 14335)
+[2017-06-02 03:24:14 +0000] [14336] [INFO] Booting worker with pid: 14336
+[2017-06-02 03:24:15 +0000] [14336] [INFO] Worker exiting (pid: 14336)
+[2017-06-02 03:24:15 +0000] [14337] [INFO] Booting worker with pid: 14337
+[2017-06-02 03:24:15 +0000] [14337] [INFO] Worker exiting (pid: 14337)
+[2017-06-02 03:24:15 +0000] [14338] [INFO] Booting worker with pid: 14338
+[2017-06-02 03:24:15 +0000] [14338] [INFO] Worker exiting (pid: 14338)
+[2017-06-02 03:24:15 +0000] [14339] [INFO] Booting worker with pid: 14339
+[2017-06-02 03:24:15 +0000] [14339] [INFO] Worker exiting (pid: 14339)
+[2017-06-02 03:24:15 +0000] [14340] [INFO] Booting worker with pid: 14340
+[2017-06-02 03:24:16 +0000] [14340] [INFO] Worker exiting (pid: 14340)
+[2017-06-02 03:24:16 +0000] [14341] [INFO] Booting worker with pid: 14341
+[2017-06-02 03:24:16 +0000] [14341] [INFO] Worker exiting (pid: 14341)
+[2017-06-02 03:24:16 +0000] [14342] [INFO] Booting worker with pid: 14342
+[2017-06-02 03:24:16 +0000] [14342] [INFO] Worker exiting (pid: 14342)
+[2017-06-02 03:24:16 +0000] [14343] [INFO] Booting worker with pid: 14343
+[2017-06-02 03:24:17 +0000] [14343] [INFO] Worker exiting (pid: 14343)
+[2017-06-02 03:24:17 +0000] [14344] [INFO] Booting worker with pid: 14344
+[2017-06-02 03:24:17 +0000] [14344] [INFO] Worker exiting (pid: 14344)
+[2017-06-02 03:24:17 +0000] [14345] [INFO] Booting worker with pid: 14345
+[2017-06-02 03:24:17 +0000] [14345] [INFO] Worker exiting (pid: 14345)
+[2017-06-02 03:24:17 +0000] [14346] [INFO] Booting worker with pid: 14346
+[2017-06-02 03:24:17 +0000] [14346] [INFO] Worker exiting (pid: 14346)
+[2017-06-02 03:24:18 +0000] [14347] [INFO] Booting worker with pid: 14347
+[2017-06-02 03:24:18 +0000] [14347] [INFO] Worker exiting (pid: 14347)
+[2017-06-02 03:24:18 +0000] [14348] [INFO] Booting worker with pid: 14348
+[2017-06-02 03:24:18 +0000] [14348] [INFO] Worker exiting (pid: 14348)
+[2017-06-02 03:24:18 +0000] [14349] [INFO] Booting worker with pid: 14349
+[2017-06-02 03:24:18 +0000] [14349] [INFO] Worker exiting (pid: 14349)
+[2017-06-02 03:24:18 +0000] [14350] [INFO] Booting worker with pid: 14350
+[2017-06-02 03:24:19 +0000] [14350] [INFO] Worker exiting (pid: 14350)
+[2017-06-02 03:24:19 +0000] [14351] [INFO] Booting worker with pid: 14351
+[2017-06-02 03:24:19 +0000] [14351] [INFO] Worker exiting (pid: 14351)
+[2017-06-02 03:24:19 +0000] [14352] [INFO] Booting worker with pid: 14352
+[2017-06-02 03:24:19 +0000] [14352] [INFO] Worker exiting (pid: 14352)
+[2017-06-02 03:24:19 +0000] [14353] [INFO] Booting worker with pid: 14353
+[2017-06-02 03:24:19 +0000] [14353] [INFO] Worker exiting (pid: 14353)
+[2017-06-02 03:24:20 +0000] [14354] [INFO] Booting worker with pid: 14354
+[2017-06-02 03:24:20 +0000] [14354] [INFO] Worker exiting (pid: 14354)
+[2017-06-02 03:24:20 +0000] [14355] [INFO] Booting worker with pid: 14355
+[2017-06-02 03:24:20 +0000] [14355] [INFO] Worker exiting (pid: 14355)
+[2017-06-02 03:24:20 +0000] [14356] [INFO] Booting worker with pid: 14356
+[2017-06-02 03:24:20 +0000] [14356] [INFO] Worker exiting (pid: 14356)
+[2017-06-02 03:24:20 +0000] [14357] [INFO] Booting worker with pid: 14357
+[2017-06-02 03:24:21 +0000] [14357] [INFO] Worker exiting (pid: 14357)
+[2017-06-02 03:24:21 +0000] [14358] [INFO] Booting worker with pid: 14358
+[2017-06-02 03:24:21 +0000] [14358] [INFO] Worker exiting (pid: 14358)
+[2017-06-02 03:24:21 +0000] [14359] [INFO] Booting worker with pid: 14359
+[2017-06-02 03:24:21 +0000] [14359] [INFO] Worker exiting (pid: 14359)
+[2017-06-02 03:24:21 +0000] [14360] [INFO] Booting worker with pid: 14360
+[2017-06-02 03:24:21 +0000] [14360] [INFO] Worker exiting (pid: 14360)
+[2017-06-02 03:24:22 +0000] [14361] [INFO] Booting worker with pid: 14361
+[2017-06-02 03:24:22 +0000] [14361] [INFO] Worker exiting (pid: 14361)
+[2017-06-02 03:24:22 +0000] [14362] [INFO] Booting worker with pid: 14362
+[2017-06-02 03:24:22 +0000] [14362] [INFO] Worker exiting (pid: 14362)
+[2017-06-02 03:24:22 +0000] [14363] [INFO] Booting worker with pid: 14363
+[2017-06-02 03:24:22 +0000] [14363] [INFO] Worker exiting (pid: 14363)
+[2017-06-02 03:24:22 +0000] [14364] [INFO] Booting worker with pid: 14364
+[2017-06-02 03:24:23 +0000] [14364] [INFO] Worker exiting (pid: 14364)
+[2017-06-02 03:24:23 +0000] [14365] [INFO] Booting worker with pid: 14365
+[2017-06-02 03:24:23 +0000] [14365] [INFO] Worker exiting (pid: 14365)
+[2017-06-02 03:24:23 +0000] [14366] [INFO] Booting worker with pid: 14366
+[2017-06-02 03:24:23 +0000] [14366] [INFO] Worker exiting (pid: 14366)
+[2017-06-02 03:24:23 +0000] [14367] [INFO] Booting worker with pid: 14367
+[2017-06-02 03:24:23 +0000] [14367] [INFO] Worker exiting (pid: 14367)
+[2017-06-02 03:24:24 +0000] [14368] [INFO] Booting worker with pid: 14368
+[2017-06-02 03:24:24 +0000] [14368] [INFO] Worker exiting (pid: 14368)
+[2017-06-02 03:24:24 +0000] [14369] [INFO] Booting worker with pid: 14369
+[2017-06-02 03:24:24 +0000] [14369] [INFO] Worker exiting (pid: 14369)
+[2017-06-02 03:24:24 +0000] [14370] [INFO] Booting worker with pid: 14370
+[2017-06-02 03:24:24 +0000] [14370] [INFO] Worker exiting (pid: 14370)
+[2017-06-02 03:24:25 +0000] [14371] [INFO] Booting worker with pid: 14371
+[2017-06-02 03:24:25 +0000] [14371] [INFO] Worker exiting (pid: 14371)
+[2017-06-02 03:24:25 +0000] [14372] [INFO] Booting worker with pid: 14372
+[2017-06-02 03:24:25 +0000] [14372] [INFO] Worker exiting (pid: 14372)
+[2017-06-02 03:24:25 +0000] [14373] [INFO] Booting worker with pid: 14373
+[2017-06-02 03:24:25 +0000] [14373] [INFO] Worker exiting (pid: 14373)
+[2017-06-02 03:24:25 +0000] [14374] [INFO] Booting worker with pid: 14374
+[2017-06-02 03:24:25 +0000] [14374] [INFO] Worker exiting (pid: 14374)
+[2017-06-02 03:24:26 +0000] [14375] [INFO] Booting worker with pid: 14375
+[2017-06-02 03:24:26 +0000] [14375] [INFO] Worker exiting (pid: 14375)
+[2017-06-02 03:24:26 +0000] [14376] [INFO] Booting worker with pid: 14376
+[2017-06-02 03:24:26 +0000] [14376] [INFO] Worker exiting (pid: 14376)
+[2017-06-02 03:24:26 +0000] [14377] [INFO] Booting worker with pid: 14377
+[2017-06-02 03:24:26 +0000] [14377] [INFO] Worker exiting (pid: 14377)
+[2017-06-02 03:24:26 +0000] [14378] [INFO] Booting worker with pid: 14378
+[2017-06-02 03:24:27 +0000] [14378] [INFO] Worker exiting (pid: 14378)
+[2017-06-02 03:24:27 +0000] [14379] [INFO] Booting worker with pid: 14379
+[2017-06-02 03:24:27 +0000] [14379] [INFO] Worker exiting (pid: 14379)
+[2017-06-02 03:24:27 +0000] [14380] [INFO] Booting worker with pid: 14380
+[2017-06-02 03:24:27 +0000] [14380] [INFO] Worker exiting (pid: 14380)
+[2017-06-02 03:24:27 +0000] [14381] [INFO] Booting worker with pid: 14381
+[2017-06-02 03:24:27 +0000] [14381] [INFO] Worker exiting (pid: 14381)
+[2017-06-02 03:24:28 +0000] [14382] [INFO] Booting worker with pid: 14382
+[2017-06-02 03:24:28 +0000] [14382] [INFO] Worker exiting (pid: 14382)
+[2017-06-02 03:24:28 +0000] [14383] [INFO] Booting worker with pid: 14383
+[2017-06-02 03:24:28 +0000] [14383] [INFO] Worker exiting (pid: 14383)
+[2017-06-02 03:24:28 +0000] [14384] [INFO] Booting worker with pid: 14384
+[2017-06-02 03:24:28 +0000] [14384] [INFO] Worker exiting (pid: 14384)
+[2017-06-02 03:24:28 +0000] [14385] [INFO] Booting worker with pid: 14385
+[2017-06-02 03:24:29 +0000] [14385] [INFO] Worker exiting (pid: 14385)
+[2017-06-02 03:24:29 +0000] [14386] [INFO] Booting worker with pid: 14386
+[2017-06-02 03:24:29 +0000] [14386] [INFO] Worker exiting (pid: 14386)
+[2017-06-02 03:24:29 +0000] [14387] [INFO] Booting worker with pid: 14387
+[2017-06-02 03:24:29 +0000] [14387] [INFO] Worker exiting (pid: 14387)
+[2017-06-02 03:24:29 +0000] [14388] [INFO] Booting worker with pid: 14388
+[2017-06-02 03:24:29 +0000] [14388] [INFO] Worker exiting (pid: 14388)
+[2017-06-02 03:24:30 +0000] [14389] [INFO] Booting worker with pid: 14389
+[2017-06-02 03:24:30 +0000] [14389] [INFO] Worker exiting (pid: 14389)
+[2017-06-02 03:24:30 +0000] [14390] [INFO] Booting worker with pid: 14390
+[2017-06-02 03:24:30 +0000] [14390] [INFO] Worker exiting (pid: 14390)
+[2017-06-02 03:24:30 +0000] [14391] [INFO] Booting worker with pid: 14391
+[2017-06-02 03:24:30 +0000] [14391] [INFO] Worker exiting (pid: 14391)
+[2017-06-02 03:24:30 +0000] [14392] [INFO] Booting worker with pid: 14392
+[2017-06-02 03:24:31 +0000] [14392] [INFO] Worker exiting (pid: 14392)
+[2017-06-02 03:24:31 +0000] [14393] [INFO] Booting worker with pid: 14393
+[2017-06-02 03:24:31 +0000] [14393] [INFO] Worker exiting (pid: 14393)
+[2017-06-02 03:24:31 +0000] [14394] [INFO] Booting worker with pid: 14394
+[2017-06-02 03:24:31 +0000] [14394] [INFO] Worker exiting (pid: 14394)
+[2017-06-02 03:24:31 +0000] [14395] [INFO] Booting worker with pid: 14395
+[2017-06-02 03:24:31 +0000] [14395] [INFO] Worker exiting (pid: 14395)
+[2017-06-02 03:24:32 +0000] [14396] [INFO] Booting worker with pid: 14396
+[2017-06-02 03:24:32 +0000] [14396] [INFO] Worker exiting (pid: 14396)
+[2017-06-02 03:24:32 +0000] [14397] [INFO] Booting worker with pid: 14397
+[2017-06-02 03:24:32 +0000] [14397] [INFO] Worker exiting (pid: 14397)
+[2017-06-02 03:24:32 +0000] [14398] [INFO] Booting worker with pid: 14398
+[2017-06-02 03:24:32 +0000] [14398] [INFO] Worker exiting (pid: 14398)
+[2017-06-02 03:24:32 +0000] [14399] [INFO] Booting worker with pid: 14399
+[2017-06-02 03:24:33 +0000] [14399] [INFO] Worker exiting (pid: 14399)
+[2017-06-02 03:24:33 +0000] [14400] [INFO] Booting worker with pid: 14400
+[2017-06-02 03:24:33 +0000] [14400] [INFO] Worker exiting (pid: 14400)
+[2017-06-02 03:24:33 +0000] [14401] [INFO] Booting worker with pid: 14401
+[2017-06-02 03:24:33 +0000] [14401] [INFO] Worker exiting (pid: 14401)
+[2017-06-02 03:24:33 +0000] [14402] [INFO] Booting worker with pid: 14402
+[2017-06-02 03:24:33 +0000] [14402] [INFO] Worker exiting (pid: 14402)
+[2017-06-02 03:24:33 +0000] [14403] [INFO] Booting worker with pid: 14403
+[2017-06-02 03:24:34 +0000] [14403] [INFO] Worker exiting (pid: 14403)
+[2017-06-02 03:24:34 +0000] [14404] [INFO] Booting worker with pid: 14404
+[2017-06-02 03:24:34 +0000] [14404] [INFO] Worker exiting (pid: 14404)
+[2017-06-02 03:24:34 +0000] [14405] [INFO] Booting worker with pid: 14405
+[2017-06-02 03:24:34 +0000] [14405] [INFO] Worker exiting (pid: 14405)
+[2017-06-02 03:24:34 +0000] [14406] [INFO] Booting worker with pid: 14406
+[2017-06-02 03:24:35 +0000] [14406] [INFO] Worker exiting (pid: 14406)
+[2017-06-02 03:24:35 +0000] [14407] [INFO] Booting worker with pid: 14407
+[2017-06-02 03:24:35 +0000] [14407] [INFO] Worker exiting (pid: 14407)
+[2017-06-02 03:24:35 +0000] [14408] [INFO] Booting worker with pid: 14408
+[2017-06-02 03:24:35 +0000] [14408] [INFO] Worker exiting (pid: 14408)
+[2017-06-02 03:24:35 +0000] [14409] [INFO] Booting worker with pid: 14409
+[2017-06-02 03:24:35 +0000] [14409] [INFO] Worker exiting (pid: 14409)
+[2017-06-02 03:24:36 +0000] [14410] [INFO] Booting worker with pid: 14410
+[2017-06-02 03:24:36 +0000] [14410] [INFO] Worker exiting (pid: 14410)
+[2017-06-02 03:24:36 +0000] [14411] [INFO] Booting worker with pid: 14411
+[2017-06-02 03:24:36 +0000] [14411] [INFO] Worker exiting (pid: 14411)
+[2017-06-02 03:24:36 +0000] [14412] [INFO] Booting worker with pid: 14412
+[2017-06-02 03:24:36 +0000] [14412] [INFO] Worker exiting (pid: 14412)
+[2017-06-02 03:24:36 +0000] [14413] [INFO] Booting worker with pid: 14413
+[2017-06-02 03:24:37 +0000] [14413] [INFO] Worker exiting (pid: 14413)
+[2017-06-02 03:24:37 +0000] [14414] [INFO] Booting worker with pid: 14414
+[2017-06-02 03:24:37 +0000] [14414] [INFO] Worker exiting (pid: 14414)
+[2017-06-02 03:24:37 +0000] [14415] [INFO] Booting worker with pid: 14415
+[2017-06-02 03:24:37 +0000] [14415] [INFO] Worker exiting (pid: 14415)
+[2017-06-02 03:24:37 +0000] [14416] [INFO] Booting worker with pid: 14416
+[2017-06-02 03:24:37 +0000] [14416] [INFO] Worker exiting (pid: 14416)
+[2017-06-02 03:24:38 +0000] [14417] [INFO] Booting worker with pid: 14417
+[2017-06-02 03:24:38 +0000] [14417] [INFO] Worker exiting (pid: 14417)
+[2017-06-02 03:24:38 +0000] [14418] [INFO] Booting worker with pid: 14418
+[2017-06-02 03:24:38 +0000] [14418] [INFO] Worker exiting (pid: 14418)
+[2017-06-02 03:24:38 +0000] [14419] [INFO] Booting worker with pid: 14419
+[2017-06-02 03:24:38 +0000] [14419] [INFO] Worker exiting (pid: 14419)
+[2017-06-02 03:24:38 +0000] [14420] [INFO] Booting worker with pid: 14420
+[2017-06-02 03:24:39 +0000] [14420] [INFO] Worker exiting (pid: 14420)
+[2017-06-02 03:24:39 +0000] [14421] [INFO] Booting worker with pid: 14421
+[2017-06-02 03:24:39 +0000] [14421] [INFO] Worker exiting (pid: 14421)
+[2017-06-02 03:24:39 +0000] [14422] [INFO] Booting worker with pid: 14422
+[2017-06-02 03:24:39 +0000] [14422] [INFO] Worker exiting (pid: 14422)
+[2017-06-02 03:24:39 +0000] [14423] [INFO] Booting worker with pid: 14423
+[2017-06-02 03:24:40 +0000] [14423] [INFO] Worker exiting (pid: 14423)
+[2017-06-02 03:24:40 +0000] [14424] [INFO] Booting worker with pid: 14424
+[2017-06-02 03:24:40 +0000] [14424] [INFO] Worker exiting (pid: 14424)
+[2017-06-02 03:24:40 +0000] [14425] [INFO] Booting worker with pid: 14425
+[2017-06-02 03:24:41 +0000] [14425] [INFO] Worker exiting (pid: 14425)
+[2017-06-02 03:24:41 +0000] [14426] [INFO] Booting worker with pid: 14426
+[2017-06-02 03:24:41 +0000] [14426] [INFO] Worker exiting (pid: 14426)
+[2017-06-02 03:24:42 +0000] [14427] [INFO] Booting worker with pid: 14427
+[2017-06-02 03:24:42 +0000] [14427] [INFO] Worker exiting (pid: 14427)
+[2017-06-02 03:24:42 +0000] [14428] [INFO] Booting worker with pid: 14428
+[2017-06-02 03:48:08 +0000] [14428] [INFO] Worker exiting (pid: 14428)
+[2017-06-02 03:48:09 +0000] [14547] [INFO] Booting worker with pid: 14547
+[2017-06-02 04:40:02 +0000] [14547] [INFO] Worker exiting (pid: 14547)
+[2017-06-02 04:40:02 +0000] [14833] [INFO] Booting worker with pid: 14833
+[2017-06-02 05:49:22 +0000] [14833] [INFO] Worker exiting (pid: 14833)
+[2017-06-02 05:49:23 +0000] [15194] [INFO] Booting worker with pid: 15194
+[2017-06-02 06:22:48 +0000] [15194] [INFO] Worker exiting (pid: 15194)
+[2017-06-02 06:22:48 +0000] [15397] [INFO] Booting worker with pid: 15397
+[2017-06-02 06:44:40 +0000] [15397] [INFO] Worker exiting (pid: 15397)
+[2017-06-02 06:44:40 +0000] [15717] [INFO] Booting worker with pid: 15717
+[2017-06-02 07:00:49 +0000] [15717] [INFO] Worker exiting (pid: 15717)
+[2017-06-02 07:00:49 +0000] [15821] [INFO] Booting worker with pid: 15821
+[2017-06-02 07:21:17 +0000] [15821] [INFO] Worker exiting (pid: 15821)
+[2017-06-02 07:21:18 +0000] [15928] [INFO] Booting worker with pid: 15928
+[2017-06-02 07:52:35 +0000] [15928] [INFO] Worker exiting (pid: 15928)
+[2017-06-02 07:52:36 +0000] [16188] [INFO] Booting worker with pid: 16188
+[2017-06-02 08:03:02 +0000] [16188] [INFO] Worker exiting (pid: 16188)
+[2017-06-02 08:03:02 +0000] [16253] [INFO] Booting worker with pid: 16253
+[2017-06-02 09:37:48 +0000] [16253] [INFO] Worker exiting (pid: 16253)
+[2017-06-02 09:37:48 +0000] [16737] [INFO] Booting worker with pid: 16737
+[2017-06-02 10:21:49 +0000] [16737] [INFO] Worker exiting (pid: 16737)
+[2017-06-02 10:21:49 +0000] [16977] [INFO] Booting worker with pid: 16977
+[2017-06-02 10:21:50 +0000] [16977] [INFO] Worker exiting (pid: 16977)
+[2017-06-02 10:21:50 +0000] [16978] [INFO] Booting worker with pid: 16978
+[2017-06-02 10:51:26 +0000] [16978] [INFO] Worker exiting (pid: 16978)
+[2017-06-02 10:51:27 +0000] [17113] [INFO] Booting worker with pid: 17113
+[2017-06-02 12:04:56 +0000] [17113] [INFO] Worker exiting (pid: 17113)
+[2017-06-02 12:04:57 +0000] [17599] [INFO] Booting worker with pid: 17599
+[2017-06-02 13:14:18 +0000] [17599] [INFO] Worker exiting (pid: 17599)
+[2017-06-02 13:14:18 +0000] [18219] [INFO] Booting worker with pid: 18219
+[2017-06-02 13:28:30 +0000] [18219] [INFO] Worker exiting (pid: 18219)
+[2017-06-02 13:28:31 +0000] [18418] [INFO] Booting worker with pid: 18418
+[2017-06-02 14:10:13 +0000] [18418] [INFO] Worker exiting (pid: 18418)
+[2017-06-02 14:10:13 +0000] [18723] [INFO] Booting worker with pid: 18723
+[2017-06-02 14:33:28 +0000] [18723] [INFO] Worker exiting (pid: 18723)
+[2017-06-02 14:33:28 +0000] [18883] [INFO] Booting worker with pid: 18883
+[2017-06-02 15:39:07 +0000] [18883] [INFO] Worker exiting (pid: 18883)
+[2017-06-02 15:39:07 +0000] [23769] [INFO] Booting worker with pid: 23769
+[2017-06-02 16:27:35 +0000] [23769] [INFO] Worker exiting (pid: 23769)
+[2017-06-02 16:27:35 +0000] [24045] [INFO] Booting worker with pid: 24045
+[2017-06-02 17:31:58 +0000] [24045] [INFO] Worker exiting (pid: 24045)
+[2017-06-02 17:31:58 +0000] [24546] [INFO] Booting worker with pid: 24546
+[2017-06-02 18:38:57 +0000] [24546] [INFO] Worker exiting (pid: 24546)
+[2017-06-02 18:38:58 +0000] [24923] [INFO] Booting worker with pid: 24923
+[2017-06-02 20:10:58 +0000] [24923] [INFO] Worker exiting (pid: 24923)
+[2017-06-02 20:10:58 +0000] [25567] [INFO] Booting worker with pid: 25567
+[2017-06-02 20:35:23 +0000] [25567] [INFO] Worker exiting (pid: 25567)
+[2017-06-02 20:35:23 +0000] [25692] [INFO] Booting worker with pid: 25692
+[2017-06-02 21:36:01 +0000] [25692] [INFO] Worker exiting (pid: 25692)
+[2017-06-02 21:36:01 +0000] [26046] [INFO] Booting worker with pid: 26046
+[2017-06-02 22:48:37 +0000] [26046] [INFO] Worker exiting (pid: 26046)
+[2017-06-02 22:48:37 +0000] [26472] [INFO] Booting worker with pid: 26472
+[2017-06-02 22:58:04 +0000] [26472] [INFO] Worker exiting (pid: 26472)
+[2017-06-02 22:58:05 +0000] [26528] [INFO] Booting worker with pid: 26528
+[2017-06-02 23:27:56 +0000] [26528] [INFO] Worker exiting (pid: 26528)
+[2017-06-02 23:27:57 +0000] [26700] [INFO] Booting worker with pid: 26700
+[2017-06-03 01:28:14 +0000] [26700] [INFO] Worker exiting (pid: 26700)
+[2017-06-03 01:28:14 +0000] [27405] [INFO] Booting worker with pid: 27405
+[2017-06-03 02:00:37 +0000] [27405] [INFO] Worker exiting (pid: 27405)
+[2017-06-03 02:00:37 +0000] [27569] [INFO] Booting worker with pid: 27569
+[2017-06-03 02:02:13 +0000] [27569] [INFO] Worker exiting (pid: 27569)
+[2017-06-03 02:02:13 +0000] [27614] [INFO] Booting worker with pid: 27614
+[2017-06-03 02:25:34 +0000] [27614] [INFO] Worker exiting (pid: 27614)
+[2017-06-03 02:25:34 +0000] [27735] [INFO] Booting worker with pid: 27735
+[2017-06-03 03:25:15 +0000] [27735] [INFO] Worker exiting (pid: 27735)
+[2017-06-03 03:25:15 +0000] [28038] [INFO] Booting worker with pid: 28038
+[2017-06-03 03:37:21 +0000] [28038] [INFO] Worker exiting (pid: 28038)
+[2017-06-03 03:37:21 +0000] [28093] [INFO] Booting worker with pid: 28093
+[2017-06-03 03:53:13 +0000] [28093] [INFO] Worker exiting (pid: 28093)
+[2017-06-03 03:53:13 +0000] [28171] [INFO] Booting worker with pid: 28171
+[2017-06-03 04:00:06 +0000] [28171] [INFO] Worker exiting (pid: 28171)
+[2017-06-03 04:00:06 +0000] [28209] [INFO] Booting worker with pid: 28209
+[2017-06-03 04:21:32 +0000] [28209] [INFO] Worker exiting (pid: 28209)
+[2017-06-03 04:21:33 +0000] [28335] [INFO] Booting worker with pid: 28335
+[2017-06-03 04:36:22 +0000] [28335] [INFO] Worker exiting (pid: 28335)
+[2017-06-03 04:36:22 +0000] [28410] [INFO] Booting worker with pid: 28410
+[2017-06-03 05:18:00 +0000] [28410] [INFO] Worker exiting (pid: 28410)
+[2017-06-03 05:18:00 +0000] [28650] [INFO] Booting worker with pid: 28650
+[2017-06-03 05:35:22 +0000] [28650] [INFO] Worker exiting (pid: 28650)
+[2017-06-03 05:35:22 +0000] [28727] [INFO] Booting worker with pid: 28727
+[2017-06-03 05:52:48 +0000] [28727] [INFO] Worker exiting (pid: 28727)
+[2017-06-03 05:52:49 +0000] [28807] [INFO] Booting worker with pid: 28807
+[2017-06-03 06:38:00 +0000] [28807] [INFO] Worker exiting (pid: 28807)
+[2017-06-03 06:38:00 +0000] [29359] [INFO] Booting worker with pid: 29359
+[2017-06-03 08:35:40 +0000] [29359] [INFO] Worker exiting (pid: 29359)
+[2017-06-03 08:35:40 +0000] [29985] [INFO] Booting worker with pid: 29985
+[2017-06-03 10:04:34 +0000] [29985] [INFO] Worker exiting (pid: 29985)
+[2017-06-03 10:04:34 +0000] [30469] [INFO] Booting worker with pid: 30469
+[2017-06-03 11:04:50 +0000] [30469] [INFO] Worker exiting (pid: 30469)
+[2017-06-03 11:04:50 +0000] [30837] [INFO] Booting worker with pid: 30837
+[2017-06-03 12:19:33 +0000] [30837] [INFO] Worker exiting (pid: 30837)
+[2017-06-03 12:19:33 +0000] [31907] [INFO] Booting worker with pid: 31907
+[2017-06-03 13:14:47 +0000] [8690] [CRITICAL] WORKER TIMEOUT (pid:31907)
+[2017-06-03 13:14:47 +0000] [31907] [INFO] Worker exiting (pid: 31907)
+[2017-06-03 13:14:47 +0000] [32605] [INFO] Booting worker with pid: 32605
+[2017-06-03 13:16:47 +0000] [8690] [CRITICAL] WORKER TIMEOUT (pid:32605)
+[2017-06-03 13:16:47 +0000] [32605] [INFO] Worker exiting (pid: 32605)
+[2017-06-03 13:16:48 +0000] [369] [INFO] Booting worker with pid: 369
+[2017-06-03 14:07:03 +0000] [369] [INFO] Worker exiting (pid: 369)
+[2017-06-03 14:07:03 +0000] [953] [INFO] Booting worker with pid: 953
+[2017-06-03 15:24:45 +0000] [953] [INFO] Worker exiting (pid: 953)
+[2017-06-03 15:24:45 +0000] [1478] [INFO] Booting worker with pid: 1478
+[2017-06-03 16:34:42 +0000] [1478] [INFO] Worker exiting (pid: 1478)
+[2017-06-03 16:34:42 +0000] [2504] [INFO] Booting worker with pid: 2504
+[2017-06-03 16:52:28 +0000] [8690] [INFO] Handling signal: term
+[2017-06-03 16:52:28 +0000] [2504] [INFO] Worker exiting (pid: 2504)
+[2017-06-03 16:52:29 +0000] [8690] [INFO] Shutting down: Master
+[2017-06-03 16:52:35 +0000] [2848] [INFO] Starting gunicorn 19.7.1
+[2017-06-03 16:52:35 +0000] [2848] [INFO] Listening at: http://127.0.0.1:8000 (2848)
+[2017-06-03 16:52:35 +0000] [2848] [INFO] Using worker: sync
+[2017-06-03 16:52:35 +0000] [2905] [INFO] Booting worker with pid: 2905
+[2017-06-03 17:20:41 +0000] [2905] [INFO] Worker exiting (pid: 2905)
+[2017-06-03 17:20:41 +0000] [3459] [INFO] Booting worker with pid: 3459
+[2017-06-03 18:21:14 +0000] [3459] [INFO] Worker exiting (pid: 3459)
+[2017-06-03 18:21:14 +0000] [4274] [INFO] Booting worker with pid: 4274
+[2017-06-03 18:21:14 +0000] [4274] [INFO] Worker exiting (pid: 4274)
+[2017-06-03 18:21:15 +0000] [4275] [INFO] Booting worker with pid: 4275
+[2017-06-03 18:21:15 +0000] [4275] [INFO] Worker exiting (pid: 4275)
+[2017-06-03 18:21:15 +0000] [4276] [INFO] Booting worker with pid: 4276
+[2017-06-03 18:21:16 +0000] [4276] [INFO] Worker exiting (pid: 4276)
+[2017-06-03 18:21:16 +0000] [4277] [INFO] Booting worker with pid: 4277
+[2017-06-03 18:27:26 +0000] [4277] [INFO] Worker exiting (pid: 4277)
+[2017-06-03 18:27:26 +0000] [4298] [INFO] Booting worker with pid: 4298
+[2017-06-03 18:50:00 +0000] [4298] [INFO] Worker exiting (pid: 4298)
+[2017-06-03 18:50:01 +0000] [4445] [INFO] Booting worker with pid: 4445
+[2017-06-03 18:51:13 +0000] [4445] [INFO] Worker exiting (pid: 4445)
+[2017-06-03 18:51:13 +0000] [4459] [INFO] Booting worker with pid: 4459
+[2017-06-03 20:30:11 +0000] [4459] [INFO] Worker exiting (pid: 4459)
+[2017-06-03 20:30:11 +0000] [5006] [INFO] Booting worker with pid: 5006
+[2017-06-03 21:36:44 +0000] [5006] [INFO] Worker exiting (pid: 5006)
+[2017-06-03 21:36:44 +0000] [5340] [INFO] Booting worker with pid: 5340
+[2017-06-03 22:36:59 +0000] [5340] [INFO] Worker exiting (pid: 5340)
+[2017-06-03 22:37:00 +0000] [5654] [INFO] Booting worker with pid: 5654
+[2017-06-03 23:13:36 +0000] [5654] [INFO] Worker exiting (pid: 5654)
+[2017-06-03 23:13:36 +0000] [5865] [INFO] Booting worker with pid: 5865
+[2017-06-04 00:18:27 +0000] [5865] [INFO] Worker exiting (pid: 5865)
+[2017-06-04 00:18:27 +0000] [6288] [INFO] Booting worker with pid: 6288
+[2017-06-04 01:44:01 +0000] [6288] [INFO] Worker exiting (pid: 6288)
+[2017-06-04 01:44:01 +0000] [7089] [INFO] Booting worker with pid: 7089
+[2017-06-04 02:08:36 +0000] [7089] [INFO] Worker exiting (pid: 7089)
+[2017-06-04 02:08:36 +0000] [7232] [INFO] Booting worker with pid: 7232
+[2017-06-04 04:27:39 +0000] [7232] [INFO] Worker exiting (pid: 7232)
+[2017-06-04 04:27:39 +0000] [8026] [INFO] Booting worker with pid: 8026
+[2017-06-04 05:18:56 +0000] [8026] [INFO] Worker exiting (pid: 8026)
+[2017-06-04 05:18:56 +0000] [8300] [INFO] Booting worker with pid: 8300
+[2017-06-04 05:43:40 +0000] [8300] [INFO] Worker exiting (pid: 8300)
+[2017-06-04 05:43:40 +0000] [8415] [INFO] Booting worker with pid: 8415
+[2017-06-04 05:52:51 +0000] [8415] [INFO] Worker exiting (pid: 8415)
+[2017-06-04 05:52:52 +0000] [8457] [INFO] Booting worker with pid: 8457
+[2017-06-04 06:57:13 +0000] [8457] [INFO] Worker exiting (pid: 8457)
+[2017-06-04 06:57:13 +0000] [9025] [INFO] Booting worker with pid: 9025
+[2017-06-04 07:53:39 +0000] [9025] [INFO] Worker exiting (pid: 9025)
+[2017-06-04 07:53:40 +0000] [9327] [INFO] Booting worker with pid: 9327
+[2017-06-04 08:15:59 +0000] [9327] [INFO] Worker exiting (pid: 9327)
+[2017-06-04 08:15:59 +0000] [9466] [INFO] Booting worker with pid: 9466
+[2017-06-04 08:18:16 +0000] [9466] [INFO] Worker exiting (pid: 9466)
+[2017-06-04 08:18:16 +0000] [9487] [INFO] Booting worker with pid: 9487
+[2017-06-04 09:00:01 +0000] [9487] [INFO] Worker exiting (pid: 9487)
+[2017-06-04 09:00:01 +0000] [9682] [INFO] Booting worker with pid: 9682
+[2017-06-04 09:18:44 +0000] [9682] [INFO] Worker exiting (pid: 9682)
+[2017-06-04 09:18:44 +0000] [9818] [INFO] Booting worker with pid: 9818
+[2017-06-04 09:24:47 +0000] [9818] [INFO] Worker exiting (pid: 9818)
+[2017-06-04 09:24:47 +0000] [9836] [INFO] Booting worker with pid: 9836
+[2017-06-04 09:43:56 +0000] [9836] [INFO] Worker exiting (pid: 9836)
+[2017-06-04 09:43:56 +0000] [9933] [INFO] Booting worker with pid: 9933
+[2017-06-04 10:55:10 +0000] [9933] [INFO] Worker exiting (pid: 9933)
+[2017-06-04 10:55:10 +0000] [10312] [INFO] Booting worker with pid: 10312
+[2017-06-04 11:22:51 +0000] [10312] [INFO] Worker exiting (pid: 10312)
+[2017-06-04 11:22:51 +0000] [10482] [INFO] Booting worker with pid: 10482
+[2017-06-04 11:50:13 +0000] [10482] [INFO] Worker exiting (pid: 10482)
+[2017-06-04 11:50:13 +0000] [10618] [INFO] Booting worker with pid: 10618
+[2017-06-04 12:17:29 +0000] [10618] [INFO] Worker exiting (pid: 10618)
+[2017-06-04 12:17:30 +0000] [10788] [INFO] Booting worker with pid: 10788
+[2017-06-04 13:20:37 +0000] [10788] [INFO] Worker exiting (pid: 10788)
+[2017-06-04 13:20:38 +0000] [11122] [INFO] Booting worker with pid: 11122
+[2017-06-04 13:24:30 +0000] [11122] [INFO] Worker exiting (pid: 11122)
+[2017-06-04 13:24:30 +0000] [11140] [INFO] Booting worker with pid: 11140
+[2017-06-04 13:44:01 +0000] [11140] [INFO] Worker exiting (pid: 11140)
+[2017-06-04 13:44:01 +0000] [11298] [INFO] Booting worker with pid: 11298
+[2017-06-04 14:26:55 +0000] [11298] [INFO] Worker exiting (pid: 11298)
+[2017-06-04 14:26:55 +0000] [11541] [INFO] Booting worker with pid: 11541
+[2017-06-04 15:02:31 +0000] [11541] [INFO] Worker exiting (pid: 11541)
+[2017-06-04 15:02:31 +0000] [11738] [INFO] Booting worker with pid: 11738
+[2017-06-04 15:07:21 +0000] [11738] [INFO] Worker exiting (pid: 11738)
+[2017-06-04 15:07:21 +0000] [11759] [INFO] Booting worker with pid: 11759
+[2017-06-04 15:28:26 +0000] [11759] [INFO] Worker exiting (pid: 11759)
+[2017-06-04 15:28:26 +0000] [11866] [INFO] Booting worker with pid: 11866
+[2017-06-04 15:49:32 +0000] [11866] [INFO] Worker exiting (pid: 11866)
+[2017-06-04 15:49:32 +0000] [11961] [INFO] Booting worker with pid: 11961
+[2017-06-04 16:25:53 +0000] [11961] [INFO] Worker exiting (pid: 11961)
+[2017-06-04 16:25:54 +0000] [12160] [INFO] Booting worker with pid: 12160
+[2017-06-04 16:48:51 +0000] [12160] [INFO] Worker exiting (pid: 12160)
+[2017-06-04 16:48:51 +0000] [12273] [INFO] Booting worker with pid: 12273
+[2017-06-04 17:30:01 +0000] [12273] [INFO] Worker exiting (pid: 12273)
+[2017-06-04 17:30:01 +0000] [12492] [INFO] Booting worker with pid: 12492
+[2017-06-04 18:30:30 +0000] [12492] [INFO] Worker exiting (pid: 12492)
+[2017-06-04 18:30:30 +0000] [12830] [INFO] Booting worker with pid: 12830
+[2017-06-04 19:11:32 +0000] [12830] [INFO] Worker exiting (pid: 12830)
+[2017-06-04 19:11:32 +0000] [13063] [INFO] Booting worker with pid: 13063
+[2017-06-04 20:09:08 +0000] [13063] [INFO] Worker exiting (pid: 13063)
+[2017-06-04 20:09:09 +0000] [13367] [INFO] Booting worker with pid: 13367
+[2017-06-04 20:29:45 +0000] [13367] [INFO] Worker exiting (pid: 13367)
+[2017-06-04 20:29:45 +0000] [13468] [INFO] Booting worker with pid: 13468
+[2017-06-04 21:03:27 +0000] [13468] [INFO] Worker exiting (pid: 13468)
+[2017-06-04 21:03:27 +0000] [13678] [INFO] Booting worker with pid: 13678
+[2017-06-04 21:59:30 +0000] [13678] [INFO] Worker exiting (pid: 13678)
+[2017-06-04 21:59:30 +0000] [13971] [INFO] Booting worker with pid: 13971
+[2017-06-04 22:50:44 +0000] [13971] [INFO] Worker exiting (pid: 13971)
+[2017-06-04 22:50:45 +0000] [14253] [INFO] Booting worker with pid: 14253
+[2017-06-05 00:42:22 +0000] [14253] [INFO] Worker exiting (pid: 14253)
+[2017-06-05 00:42:22 +0000] [14960] [INFO] Booting worker with pid: 14960
+[2017-06-05 00:47:00 +0000] [14960] [INFO] Worker exiting (pid: 14960)
+[2017-06-05 00:47:01 +0000] [14996] [INFO] Booting worker with pid: 14996
+[2017-06-05 01:13:16 +0000] [14996] [INFO] Worker exiting (pid: 14996)
+[2017-06-05 01:13:16 +0000] [15522] [INFO] Booting worker with pid: 15522
+[2017-06-05 01:27:20 +0000] [15522] [INFO] Worker exiting (pid: 15522)
+[2017-06-05 01:27:20 +0000] [15606] [INFO] Booting worker with pid: 15606
+[2017-06-05 01:59:17 +0000] [15606] [INFO] Worker exiting (pid: 15606)
+[2017-06-05 01:59:17 +0000] [15773] [INFO] Booting worker with pid: 15773
+[2017-06-05 03:04:21 +0000] [15773] [INFO] Worker exiting (pid: 15773)
+[2017-06-05 03:04:21 +0000] [16160] [INFO] Booting worker with pid: 16160
+[2017-06-05 03:09:32 +0000] [16160] [INFO] Worker exiting (pid: 16160)
+[2017-06-05 03:09:33 +0000] [16183] [INFO] Booting worker with pid: 16183
+[2017-06-05 03:34:46 +0000] [16183] [INFO] Worker exiting (pid: 16183)
+[2017-06-05 03:34:46 +0000] [16306] [INFO] Booting worker with pid: 16306
+[2017-06-05 04:05:15 +0000] [16306] [INFO] Worker exiting (pid: 16306)
+[2017-06-05 04:05:15 +0000] [16496] [INFO] Booting worker with pid: 16496
+[2017-06-05 04:47:43 +0000] [16496] [INFO] Worker exiting (pid: 16496)
+[2017-06-05 04:47:43 +0000] [16723] [INFO] Booting worker with pid: 16723
+[2017-06-05 06:54:13 +0000] [16723] [INFO] Worker exiting (pid: 16723)
+[2017-06-05 06:54:13 +0000] [17655] [INFO] Booting worker with pid: 17655
+[2017-06-05 07:04:42 +0000] [17655] [INFO] Worker exiting (pid: 17655)
+[2017-06-05 07:04:42 +0000] [17743] [INFO] Booting worker with pid: 17743
+[2017-06-05 07:41:34 +0000] [17743] [INFO] Worker exiting (pid: 17743)
+[2017-06-05 07:41:34 +0000] [17938] [INFO] Booting worker with pid: 17938
+[2017-06-05 08:07:32 +0000] [17938] [INFO] Worker exiting (pid: 17938)
+[2017-06-05 08:07:32 +0000] [18090] [INFO] Booting worker with pid: 18090
+[2017-06-05 09:12:31 +0000] [18090] [INFO] Worker exiting (pid: 18090)
+[2017-06-05 09:12:31 +0000] [18469] [INFO] Booting worker with pid: 18469
+[2017-06-05 09:55:10 +0000] [18469] [INFO] Worker exiting (pid: 18469)
+[2017-06-05 09:55:10 +0000] [18683] [INFO] Booting worker with pid: 18683
+[2017-06-05 11:20:03 +0000] [18683] [INFO] Worker exiting (pid: 18683)
+[2017-06-05 11:20:03 +0000] [19237] [INFO] Booting worker with pid: 19237
+[2017-06-05 11:36:00 +0000] [19237] [INFO] Worker exiting (pid: 19237)
+[2017-06-05 11:36:00 +0000] [19439] [INFO] Booting worker with pid: 19439
+[2017-06-05 11:55:18 +0000] [19439] [INFO] Worker exiting (pid: 19439)
+[2017-06-05 11:55:18 +0000] [19587] [INFO] Booting worker with pid: 19587
+[2017-06-05 12:10:22 +0000] [19587] [INFO] Worker exiting (pid: 19587)
+[2017-06-05 12:10:23 +0000] [19717] [INFO] Booting worker with pid: 19717
+[2017-06-05 12:10:23 +0000] [19717] [INFO] Worker exiting (pid: 19717)
+[2017-06-05 12:10:23 +0000] [19718] [INFO] Booting worker with pid: 19718
+[2017-06-05 12:46:19 +0000] [19718] [INFO] Worker exiting (pid: 19718)
+[2017-06-05 12:46:19 +0000] [20020] [INFO] Booting worker with pid: 20020
+[2017-06-05 13:08:25 +0000] [20020] [INFO] Worker exiting (pid: 20020)
+[2017-06-05 13:08:26 +0000] [20194] [INFO] Booting worker with pid: 20194
+[2017-06-05 13:26:33 +0000] [20194] [INFO] Worker exiting (pid: 20194)
+[2017-06-05 13:26:34 +0000] [20299] [INFO] Booting worker with pid: 20299
+[2017-06-05 14:00:56 +0000] [20299] [INFO] Worker exiting (pid: 20299)
+[2017-06-05 14:00:56 +0000] [20497] [INFO] Booting worker with pid: 20497
+[2017-06-05 14:00:59 +0000] [20497] [INFO] Worker exiting (pid: 20497)
+[2017-06-05 14:00:59 +0000] [20498] [INFO] Booting worker with pid: 20498
+[2017-06-05 14:34:16 +0000] [20498] [INFO] Worker exiting (pid: 20498)
+[2017-06-05 14:34:16 +0000] [20707] [INFO] Booting worker with pid: 20707
+[2017-06-05 15:03:38 +0000] [20707] [INFO] Worker exiting (pid: 20707)
+[2017-06-05 15:03:38 +0000] [20957] [INFO] Booting worker with pid: 20957
+[2017-06-05 15:11:40 +0000] [2848] [INFO] Handling signal: term
+[2017-06-05 15:11:40 +0000] [20957] [INFO] Worker exiting (pid: 20957)
+[2017-06-05 15:11:41 +0000] [2848] [INFO] Shutting down: Master
+[2017-06-05 15:11:47 +0000] [21226] [INFO] Starting gunicorn 19.7.1
+[2017-06-05 15:11:47 +0000] [21226] [INFO] Listening at: http://127.0.0.1:8000 (21226)
+[2017-06-05 15:11:47 +0000] [21226] [INFO] Using worker: sync
+[2017-06-05 15:11:47 +0000] [21280] [INFO] Booting worker with pid: 21280
+[2017-06-05 15:42:00 +0000] [21280] [INFO] Worker exiting (pid: 21280)
+[2017-06-05 15:42:00 +0000] [21613] [INFO] Booting worker with pid: 21613
+[2017-06-05 16:03:22 +0000] [21613] [INFO] Worker exiting (pid: 21613)
+[2017-06-05 16:03:22 +0000] [21779] [INFO] Booting worker with pid: 21779
+[2017-06-05 16:25:13 +0000] [21779] [INFO] Worker exiting (pid: 21779)
+[2017-06-05 16:25:13 +0000] [21934] [INFO] Booting worker with pid: 21934
+[2017-06-05 16:45:01 +0000] [21934] [INFO] Worker exiting (pid: 21934)
+[2017-06-05 16:45:01 +0000] [22037] [INFO] Booting worker with pid: 22037
+[2017-06-05 17:32:40 +0000] [22037] [INFO] Worker exiting (pid: 22037)
+[2017-06-05 17:32:40 +0000] [22491] [INFO] Booting worker with pid: 22491
+[2017-06-05 18:38:12 +0000] [22491] [INFO] Worker exiting (pid: 22491)
+[2017-06-05 18:38:12 +0000] [22986] [INFO] Booting worker with pid: 22986
+[2017-06-05 20:21:40 +0000] [22986] [INFO] Worker exiting (pid: 22986)
+[2017-06-05 20:21:40 +0000] [23720] [INFO] Booting worker with pid: 23720
+[2017-06-05 21:40:09 +0000] [23720] [INFO] Worker exiting (pid: 23720)
+[2017-06-05 21:40:09 +0000] [24139] [INFO] Booting worker with pid: 24139
+[2017-06-05 21:40:09 +0000] [24139] [INFO] Worker exiting (pid: 24139)
+[2017-06-05 21:40:09 +0000] [24140] [INFO] Booting worker with pid: 24140
+[2017-06-05 21:51:16 +0000] [24140] [INFO] Worker exiting (pid: 24140)
+[2017-06-05 21:51:16 +0000] [24197] [INFO] Booting worker with pid: 24197
+[2017-06-05 21:54:43 +0000] [24197] [INFO] Worker exiting (pid: 24197)
+[2017-06-05 21:54:44 +0000] [24218] [INFO] Booting worker with pid: 24218
+[2017-06-05 22:23:33 +0000] [24218] [INFO] Worker exiting (pid: 24218)
+[2017-06-05 22:23:33 +0000] [24397] [INFO] Booting worker with pid: 24397
+[2017-06-05 22:33:58 +0000] [24397] [INFO] Worker exiting (pid: 24397)
+[2017-06-05 22:33:59 +0000] [24458] [INFO] Booting worker with pid: 24458
+[2017-06-05 22:50:17 +0000] [24458] [INFO] Worker exiting (pid: 24458)
+[2017-06-05 22:50:17 +0000] [24542] [INFO] Booting worker with pid: 24542
+[2017-06-06 00:01:02 +0000] [24542] [INFO] Worker exiting (pid: 24542)
+[2017-06-06 00:01:02 +0000] [25044] [INFO] Booting worker with pid: 25044
+[2017-06-06 01:30:04 +0000] [25044] [INFO] Worker exiting (pid: 25044)
+[2017-06-06 01:30:04 +0000] [25544] [INFO] Booting worker with pid: 25544
+[2017-06-06 01:43:53 +0000] [25544] [INFO] Worker exiting (pid: 25544)
+[2017-06-06 01:43:53 +0000] [25613] [INFO] Booting worker with pid: 25613
+[2017-06-06 02:16:11 +0000] [25613] [INFO] Worker exiting (pid: 25613)
+[2017-06-06 02:16:11 +0000] [25811] [INFO] Booting worker with pid: 25811
+[2017-06-06 02:58:33 +0000] [25811] [INFO] Worker exiting (pid: 25811)
+[2017-06-06 02:58:33 +0000] [26045] [INFO] Booting worker with pid: 26045
+[2017-06-06 03:37:17 +0000] [26045] [INFO] Worker exiting (pid: 26045)
+[2017-06-06 03:37:17 +0000] [26282] [INFO] Booting worker with pid: 26282
+[2017-06-06 04:24:13 +0000] [26282] [INFO] Worker exiting (pid: 26282)
+[2017-06-06 04:24:13 +0000] [26549] [INFO] Booting worker with pid: 26549
+[2017-06-06 04:31:58 +0000] [26549] [INFO] Worker exiting (pid: 26549)
+[2017-06-06 04:31:59 +0000] [26588] [INFO] Booting worker with pid: 26588
+[2017-06-06 05:18:24 +0000] [26588] [INFO] Worker exiting (pid: 26588)
+[2017-06-06 05:18:24 +0000] [27301] [INFO] Booting worker with pid: 27301
+[2017-06-06 06:02:29 +0000] [27301] [INFO] Worker exiting (pid: 27301)
+[2017-06-06 06:02:29 +0000] [27578] [INFO] Booting worker with pid: 27578
+[2017-06-06 06:13:49 +0000] [27578] [INFO] Worker exiting (pid: 27578)
+[2017-06-06 06:13:50 +0000] [27645] [INFO] Booting worker with pid: 27645
+[2017-06-06 06:59:51 +0000] [27645] [INFO] Worker exiting (pid: 27645)
+[2017-06-06 06:59:51 +0000] [28145] [INFO] Booting worker with pid: 28145
+[2017-06-06 07:43:33 +0000] [28145] [INFO] Worker exiting (pid: 28145)
+[2017-06-06 07:43:33 +0000] [28412] [INFO] Booting worker with pid: 28412
+[2017-06-06 08:26:29 +0000] [28412] [INFO] Worker exiting (pid: 28412)
+[2017-06-06 08:26:29 +0000] [28672] [INFO] Booting worker with pid: 28672
+[2017-06-06 09:31:17 +0000] [28672] [INFO] Worker exiting (pid: 28672)
+[2017-06-06 09:31:17 +0000] [29036] [INFO] Booting worker with pid: 29036
+[2017-06-06 09:46:56 +0000] [29036] [INFO] Worker exiting (pid: 29036)
+[2017-06-06 09:46:56 +0000] [29127] [INFO] Booting worker with pid: 29127
+[2017-06-06 09:46:56 +0000] [29127] [INFO] Worker exiting (pid: 29127)
+[2017-06-06 09:46:56 +0000] [29128] [INFO] Booting worker with pid: 29128
+[2017-06-06 10:09:13 +0000] [29128] [INFO] Worker exiting (pid: 29128)
+[2017-06-06 10:09:13 +0000] [29269] [INFO] Booting worker with pid: 29269
+[2017-06-06 10:15:15 +0000] [29269] [INFO] Worker exiting (pid: 29269)
+[2017-06-06 10:15:15 +0000] [29308] [INFO] Booting worker with pid: 29308
+[2017-06-06 11:01:20 +0000] [29308] [INFO] Worker exiting (pid: 29308)
+[2017-06-06 11:01:20 +0000] [29692] [INFO] Booting worker with pid: 29692
+[2017-06-06 11:15:31 +0000] [29692] [INFO] Worker exiting (pid: 29692)
+[2017-06-06 11:15:32 +0000] [29878] [INFO] Booting worker with pid: 29878
+[2017-06-06 11:52:14 +0000] [29878] [INFO] Worker exiting (pid: 29878)
+[2017-06-06 11:52:15 +0000] [30412] [INFO] Booting worker with pid: 30412
+[2017-06-06 12:00:00 +0000] [30412] [INFO] Worker exiting (pid: 30412)
+[2017-06-06 12:00:00 +0000] [30471] [INFO] Booting worker with pid: 30471
+[2017-06-06 12:57:30 +0000] [30471] [INFO] Worker exiting (pid: 30471)
+[2017-06-06 12:57:30 +0000] [31131] [INFO] Booting worker with pid: 31131
+[2017-06-06 13:43:54 +0000] [31131] [INFO] Worker exiting (pid: 31131)
+[2017-06-06 13:43:54 +0000] [31477] [INFO] Booting worker with pid: 31477
+[2017-06-06 14:05:30 +0000] [31477] [INFO] Worker exiting (pid: 31477)
+[2017-06-06 14:05:30 +0000] [31675] [INFO] Booting worker with pid: 31675
+[2017-06-06 15:16:48 +0000] [31675] [INFO] Worker exiting (pid: 31675)
+[2017-06-06 15:16:48 +0000] [32426] [INFO] Booting worker with pid: 32426
+[2017-06-06 15:21:31 +0000] [32426] [INFO] Worker exiting (pid: 32426)
+[2017-06-06 15:21:31 +0000] [32507] [INFO] Booting worker with pid: 32507
+[2017-06-06 16:55:50 +0000] [32507] [INFO] Worker exiting (pid: 32507)
+[2017-06-06 16:55:50 +0000] [1543] [INFO] Booting worker with pid: 1543
+[2017-06-06 17:07:44 +0000] [1543] [INFO] Worker exiting (pid: 1543)
+[2017-06-06 17:07:44 +0000] [1659] [INFO] Booting worker with pid: 1659
+[2017-06-06 17:15:26 +0000] [1659] [INFO] Worker exiting (pid: 1659)
+[2017-06-06 17:15:26 +0000] [1828] [INFO] Booting worker with pid: 1828
+[2017-06-06 17:55:33 +0000] [1828] [INFO] Worker exiting (pid: 1828)
+[2017-06-06 17:55:33 +0000] [2288] [INFO] Booting worker with pid: 2288
+[2017-06-06 18:16:14 +0000] [2288] [INFO] Worker exiting (pid: 2288)
+[2017-06-06 18:16:14 +0000] [2862] [INFO] Booting worker with pid: 2862
+[2017-06-06 18:19:44 +0000] [2862] [INFO] Worker exiting (pid: 2862)
+[2017-06-06 18:19:44 +0000] [2891] [INFO] Booting worker with pid: 2891
+[2017-06-06 19:22:06 +0000] [2891] [INFO] Worker exiting (pid: 2891)
+[2017-06-06 19:22:06 +0000] [3545] [INFO] Booting worker with pid: 3545
+[2017-06-06 19:43:57 +0000] [3545] [INFO] Worker exiting (pid: 3545)
+[2017-06-06 19:43:57 +0000] [3653] [INFO] Booting worker with pid: 3653
+[2017-06-06 20:53:41 +0000] [3653] [INFO] Worker exiting (pid: 3653)
+[2017-06-06 20:53:41 +0000] [4163] [INFO] Booting worker with pid: 4163
+[2017-06-06 22:11:52 +0000] [4163] [INFO] Worker exiting (pid: 4163)
+[2017-06-06 22:11:52 +0000] [4633] [INFO] Booting worker with pid: 4633
+[2017-06-06 22:25:32 +0000] [4633] [INFO] Worker exiting (pid: 4633)
+[2017-06-06 22:25:32 +0000] [4702] [INFO] Booting worker with pid: 4702
+[2017-06-06 23:32:21 +0000] [4702] [INFO] Worker exiting (pid: 4702)
+[2017-06-06 23:32:21 +0000] [5080] [INFO] Booting worker with pid: 5080
+[2017-06-07 00:03:54 +0000] [5080] [INFO] Worker exiting (pid: 5080)
+[2017-06-07 00:03:54 +0000] [5408] [INFO] Booting worker with pid: 5408
+[2017-06-07 00:09:40 +0000] [5408] [INFO] Worker exiting (pid: 5408)
+[2017-06-07 00:09:41 +0000] [5431] [INFO] Booting worker with pid: 5431
+[2017-06-07 00:59:40 +0000] [5431] [INFO] Worker exiting (pid: 5431)
+[2017-06-07 00:59:40 +0000] [5715] [INFO] Booting worker with pid: 5715
+[2017-06-07 01:10:36 +0000] [5715] [INFO] Worker exiting (pid: 5715)
+[2017-06-07 01:10:36 +0000] [5806] [INFO] Booting worker with pid: 5806
+[2017-06-07 01:14:55 +0000] [5806] [INFO] Worker exiting (pid: 5806)
+[2017-06-07 01:14:55 +0000] [5828] [INFO] Booting worker with pid: 5828
+[2017-06-07 02:47:58 +0000] [5828] [INFO] Worker exiting (pid: 5828)
+[2017-06-07 02:47:58 +0000] [6363] [INFO] Booting worker with pid: 6363
+[2017-06-07 04:19:14 +0000] [6363] [INFO] Worker exiting (pid: 6363)
+[2017-06-07 04:19:15 +0000] [6902] [INFO] Booting worker with pid: 6902
+[2017-06-07 04:51:24 +0000] [6902] [INFO] Worker exiting (pid: 6902)
+[2017-06-07 04:51:24 +0000] [7065] [INFO] Booting worker with pid: 7065
+[2017-06-07 06:08:17 +0000] [7065] [INFO] Worker exiting (pid: 7065)
+[2017-06-07 06:08:17 +0000] [7548] [INFO] Booting worker with pid: 7548
+[2017-06-07 06:17:55 +0000] [7548] [INFO] Worker exiting (pid: 7548)
+[2017-06-07 06:17:55 +0000] [7593] [INFO] Booting worker with pid: 7593
+[2017-06-07 07:01:19 +0000] [7593] [INFO] Worker exiting (pid: 7593)
+[2017-06-07 07:01:19 +0000] [8019] [INFO] Booting worker with pid: 8019
+[2017-06-07 07:59:48 +0000] [8019] [INFO] Worker exiting (pid: 8019)
+[2017-06-07 07:59:48 +0000] [25075] [INFO] Booting worker with pid: 25075
+[2017-06-07 08:28:09 +0000] [25075] [INFO] Worker exiting (pid: 25075)
+[2017-06-07 08:28:09 +0000] [25255] [INFO] Booting worker with pid: 25255
+[2017-06-07 08:37:54 +0000] [25255] [INFO] Worker exiting (pid: 25255)
+[2017-06-07 08:37:54 +0000] [25300] [INFO] Booting worker with pid: 25300
+[2017-06-07 09:46:49 +0000] [25300] [INFO] Worker exiting (pid: 25300)
+[2017-06-07 09:46:49 +0000] [25693] [INFO] Booting worker with pid: 25693
+[2017-06-07 10:19:48 +0000] [25693] [INFO] Worker exiting (pid: 25693)
+[2017-06-07 10:19:48 +0000] [25914] [INFO] Booting worker with pid: 25914
+[2017-06-07 10:48:19 +0000] [25914] [INFO] Worker exiting (pid: 25914)
+[2017-06-07 10:48:19 +0000] [26065] [INFO] Booting worker with pid: 26065
+[2017-06-07 11:09:25 +0000] [26065] [INFO] Worker exiting (pid: 26065)
+[2017-06-07 11:09:25 +0000] [26210] [INFO] Booting worker with pid: 26210
+[2017-06-07 11:55:13 +0000] [26210] [INFO] Worker exiting (pid: 26210)
+[2017-06-07 11:55:13 +0000] [27396] [INFO] Booting worker with pid: 27396
+[2017-06-07 12:29:15 +0000] [27396] [INFO] Worker exiting (pid: 27396)
+[2017-06-07 12:29:15 +0000] [27684] [INFO] Booting worker with pid: 27684
+[2017-06-07 12:33:28 +0000] [27684] [INFO] Worker exiting (pid: 27684)
+[2017-06-07 12:33:28 +0000] [27710] [INFO] Booting worker with pid: 27710
+[2017-06-07 13:15:01 +0000] [27710] [INFO] Worker exiting (pid: 27710)
+[2017-06-07 13:15:01 +0000] [28007] [INFO] Booting worker with pid: 28007
+[2017-06-07 14:32:19 +0000] [28007] [INFO] Worker exiting (pid: 28007)
+[2017-06-07 14:32:19 +0000] [28494] [INFO] Booting worker with pid: 28494
+[2017-06-07 15:24:35 +0000] [28494] [INFO] Worker exiting (pid: 28494)
+[2017-06-07 15:24:36 +0000] [28941] [INFO] Booting worker with pid: 28941
+[2017-06-07 16:30:37 +0000] [28941] [INFO] Worker exiting (pid: 28941)
+[2017-06-07 16:30:37 +0000] [29336] [INFO] Booting worker with pid: 29336
+[2017-06-07 16:30:37 +0000] [29336] [INFO] Worker exiting (pid: 29336)
+[2017-06-07 16:30:38 +0000] [29337] [INFO] Booting worker with pid: 29337
+[2017-06-07 16:30:38 +0000] [29337] [INFO] Worker exiting (pid: 29337)
+[2017-06-07 16:30:38 +0000] [29338] [INFO] Booting worker with pid: 29338
+[2017-06-07 16:30:38 +0000] [29338] [INFO] Worker exiting (pid: 29338)
+[2017-06-07 16:30:38 +0000] [29339] [INFO] Booting worker with pid: 29339
+[2017-06-07 16:30:38 +0000] [29339] [INFO] Worker exiting (pid: 29339)
+[2017-06-07 16:30:38 +0000] [29340] [INFO] Booting worker with pid: 29340
+[2017-06-07 16:30:38 +0000] [29340] [INFO] Worker exiting (pid: 29340)
+[2017-06-07 16:30:38 +0000] [29341] [INFO] Booting worker with pid: 29341
+[2017-06-07 16:30:39 +0000] [29341] [INFO] Worker exiting (pid: 29341)
+[2017-06-07 16:30:39 +0000] [29342] [INFO] Booting worker with pid: 29342
+[2017-06-07 16:30:39 +0000] [29342] [INFO] Worker exiting (pid: 29342)
+[2017-06-07 16:30:39 +0000] [29343] [INFO] Booting worker with pid: 29343
+[2017-06-07 16:30:39 +0000] [29343] [INFO] Worker exiting (pid: 29343)
+[2017-06-07 16:30:39 +0000] [29344] [INFO] Booting worker with pid: 29344
+[2017-06-07 16:30:39 +0000] [29344] [INFO] Worker exiting (pid: 29344)
+[2017-06-07 16:30:40 +0000] [29345] [INFO] Booting worker with pid: 29345
+[2017-06-07 16:30:40 +0000] [29345] [INFO] Worker exiting (pid: 29345)
+[2017-06-07 16:30:40 +0000] [29346] [INFO] Booting worker with pid: 29346
+[2017-06-07 16:47:44 +0000] [29346] [INFO] Worker exiting (pid: 29346)
+[2017-06-07 16:47:44 +0000] [29454] [INFO] Booting worker with pid: 29454
+[2017-06-07 16:58:46 +0000] [29454] [INFO] Worker exiting (pid: 29454)
+[2017-06-07 16:58:46 +0000] [29500] [INFO] Booting worker with pid: 29500
+[2017-06-07 17:04:40 +0000] [29500] [INFO] Worker exiting (pid: 29500)
+[2017-06-07 17:04:40 +0000] [29567] [INFO] Booting worker with pid: 29567
+[2017-06-07 17:39:35 +0000] [29567] [INFO] Worker exiting (pid: 29567)
+[2017-06-07 17:39:35 +0000] [29763] [INFO] Booting worker with pid: 29763
+[2017-06-07 18:01:09 +0000] [29763] [INFO] Worker exiting (pid: 29763)
+[2017-06-07 18:01:09 +0000] [29916] [INFO] Booting worker with pid: 29916
+[2017-06-07 18:21:32 +0000] [29916] [INFO] Worker exiting (pid: 29916)
+[2017-06-07 18:21:32 +0000] [30087] [INFO] Booting worker with pid: 30087
+[2017-06-07 19:00:05 +0000] [30087] [INFO] Worker exiting (pid: 30087)
+[2017-06-07 19:00:06 +0000] [30360] [INFO] Booting worker with pid: 30360
+[2017-06-07 20:37:02 +0000] [30360] [INFO] Worker exiting (pid: 30360)
+[2017-06-07 20:37:02 +0000] [30918] [INFO] Booting worker with pid: 30918
+[2017-06-07 21:41:56 +0000] [30918] [INFO] Worker exiting (pid: 30918)
+[2017-06-07 21:41:57 +0000] [31288] [INFO] Booting worker with pid: 31288
+[2017-06-07 22:20:37 +0000] [31288] [INFO] Worker exiting (pid: 31288)
+[2017-06-07 22:20:37 +0000] [31529] [INFO] Booting worker with pid: 31529
+[2017-06-07 23:19:21 +0000] [31529] [INFO] Worker exiting (pid: 31529)
+[2017-06-07 23:19:21 +0000] [31856] [INFO] Booting worker with pid: 31856
+[2017-06-07 23:37:25 +0000] [31856] [INFO] Worker exiting (pid: 31856)
+[2017-06-07 23:37:25 +0000] [31961] [INFO] Booting worker with pid: 31961
+[2017-06-07 23:47:06 +0000] [31961] [INFO] Worker exiting (pid: 31961)
+[2017-06-07 23:47:06 +0000] [32004] [INFO] Booting worker with pid: 32004
+[2017-06-08 00:06:12 +0000] [32004] [INFO] Worker exiting (pid: 32004)
+[2017-06-08 00:06:12 +0000] [32211] [INFO] Booting worker with pid: 32211
+[2017-06-08 01:23:11 +0000] [32211] [INFO] Worker exiting (pid: 32211)
+[2017-06-08 01:23:11 +0000] [32638] [INFO] Booting worker with pid: 32638
+[2017-06-08 01:55:47 +0000] [32638] [INFO] Worker exiting (pid: 32638)
+[2017-06-08 01:55:47 +0000] [338] [INFO] Booting worker with pid: 338
+[2017-06-08 02:19:14 +0000] [338] [INFO] Worker exiting (pid: 338)
+[2017-06-08 02:19:14 +0000] [506] [INFO] Booting worker with pid: 506
+[2017-06-08 02:31:36 +0000] [506] [INFO] Worker exiting (pid: 506)
+[2017-06-08 02:31:36 +0000] [988] [INFO] Booting worker with pid: 988
+[2017-06-08 03:05:07 +0000] [988] [INFO] Worker exiting (pid: 988)
+[2017-06-08 03:05:07 +0000] [1204] [INFO] Booting worker with pid: 1204
+[2017-06-08 03:24:03 +0000] [1204] [INFO] Worker exiting (pid: 1204)
+[2017-06-08 03:24:03 +0000] [1302] [INFO] Booting worker with pid: 1302
+[2017-06-08 04:36:00 +0000] [1302] [INFO] Worker exiting (pid: 1302)
+[2017-06-08 04:36:00 +0000] [1710] [INFO] Booting worker with pid: 1710
+[2017-06-08 04:46:15 +0000] [1710] [INFO] Worker exiting (pid: 1710)
+[2017-06-08 04:46:15 +0000] [1773] [INFO] Booting worker with pid: 1773
+[2017-06-08 05:03:35 +0000] [1773] [INFO] Worker exiting (pid: 1773)
+[2017-06-08 05:03:35 +0000] [1885] [INFO] Booting worker with pid: 1885
+[2017-06-08 05:07:29 +0000] [1885] [INFO] Worker exiting (pid: 1885)
+[2017-06-08 05:07:29 +0000] [1908] [INFO] Booting worker with pid: 1908
+[2017-06-08 05:07:54 +0000] [1908] [INFO] Worker exiting (pid: 1908)
+[2017-06-08 05:07:54 +0000] [1909] [INFO] Booting worker with pid: 1909
+[2017-06-08 05:47:34 +0000] [1909] [INFO] Worker exiting (pid: 1909)
+[2017-06-08 05:47:34 +0000] [2120] [INFO] Booting worker with pid: 2120
+[2017-06-08 06:08:27 +0000] [2120] [INFO] Worker exiting (pid: 2120)
+[2017-06-08 06:08:27 +0000] [2276] [INFO] Booting worker with pid: 2276
+[2017-06-08 06:40:24 +0000] [2276] [INFO] Worker exiting (pid: 2276)
+[2017-06-08 06:40:24 +0000] [2782] [INFO] Booting worker with pid: 2782
+[2017-06-08 07:03:38 +0000] [2782] [INFO] Worker exiting (pid: 2782)
+[2017-06-08 07:03:38 +0000] [2937] [INFO] Booting worker with pid: 2937
+[2017-06-08 07:13:36 +0000] [2937] [INFO] Worker exiting (pid: 2937)
+[2017-06-08 07:13:36 +0000] [3001] [INFO] Booting worker with pid: 3001
+[2017-06-08 07:45:12 +0000] [3001] [INFO] Worker exiting (pid: 3001)
+[2017-06-08 07:45:12 +0000] [3170] [INFO] Booting worker with pid: 3170
+[2017-06-08 07:49:42 +0000] [3170] [INFO] Worker exiting (pid: 3170)
+[2017-06-08 07:49:42 +0000] [3192] [INFO] Booting worker with pid: 3192
+[2017-06-08 08:29:03 +0000] [3192] [INFO] Worker exiting (pid: 3192)
+[2017-06-08 08:29:03 +0000] [3425] [INFO] Booting worker with pid: 3425
+[2017-06-08 08:48:02 +0000] [3425] [INFO] Worker exiting (pid: 3425)
+[2017-06-08 08:48:02 +0000] [3511] [INFO] Booting worker with pid: 3511
+[2017-06-08 10:36:09 +0000] [3511] [INFO] Worker exiting (pid: 3511)
+[2017-06-08 10:36:09 +0000] [4134] [INFO] Booting worker with pid: 4134
+[2017-06-08 11:07:09 +0000] [4134] [INFO] Worker exiting (pid: 4134)
+[2017-06-08 11:07:09 +0000] [4326] [INFO] Booting worker with pid: 4326
+[2017-06-08 12:05:22 +0000] [4326] [INFO] Worker exiting (pid: 4326)
+[2017-06-08 12:05:22 +0000] [4821] [INFO] Booting worker with pid: 4821
+[2017-06-08 12:08:40 +0000] [4821] [INFO] Worker exiting (pid: 4821)
+[2017-06-08 12:08:40 +0000] [4833] [INFO] Booting worker with pid: 4833
+[2017-06-08 12:14:28 +0000] [4833] [INFO] Worker exiting (pid: 4833)
+[2017-06-08 12:14:28 +0000] [4885] [INFO] Booting worker with pid: 4885
+[2017-06-08 12:50:29 +0000] [4885] [INFO] Worker exiting (pid: 4885)
+[2017-06-08 12:50:29 +0000] [5147] [INFO] Booting worker with pid: 5147
+[2017-06-08 13:44:14 +0000] [5147] [INFO] Worker exiting (pid: 5147)
+[2017-06-08 13:44:14 +0000] [5510] [INFO] Booting worker with pid: 5510
+[2017-06-08 13:58:34 +0000] [5510] [INFO] Worker exiting (pid: 5510)
+[2017-06-08 13:58:34 +0000] [5592] [INFO] Booting worker with pid: 5592
+[2017-06-08 14:52:09 +0000] [5592] [INFO] Worker exiting (pid: 5592)
+[2017-06-08 14:52:09 +0000] [5894] [INFO] Booting worker with pid: 5894
+[2017-06-08 15:16:49 +0000] [5894] [INFO] Worker exiting (pid: 5894)
+[2017-06-08 15:16:49 +0000] [6051] [INFO] Booting worker with pid: 6051
+[2017-06-08 16:22:33 +0000] [6051] [INFO] Worker exiting (pid: 6051)
+[2017-06-08 16:22:33 +0000] [6434] [INFO] Booting worker with pid: 6434
+[2017-06-08 16:59:29 +0000] [6434] [INFO] Worker exiting (pid: 6434)
+[2017-06-08 16:59:29 +0000] [6623] [INFO] Booting worker with pid: 6623
+[2017-06-08 17:10:06 +0000] [6623] [INFO] Worker exiting (pid: 6623)
+[2017-06-08 17:10:07 +0000] [6712] [INFO] Booting worker with pid: 6712
+[2017-06-08 17:28:32 +0000] [6712] [INFO] Worker exiting (pid: 6712)
+[2017-06-08 17:28:32 +0000] [6806] [INFO] Booting worker with pid: 6806
+[2017-06-08 18:01:09 +0000] [6806] [INFO] Worker exiting (pid: 6806)
+[2017-06-08 18:01:09 +0000] [7233] [INFO] Booting worker with pid: 7233
+[2017-06-08 18:16:22 +0000] [7233] [INFO] Worker exiting (pid: 7233)
+[2017-06-08 18:16:22 +0000] [7400] [INFO] Booting worker with pid: 7400
+[2017-06-08 20:03:31 +0000] [7400] [INFO] Worker exiting (pid: 7400)
+[2017-06-08 20:03:31 +0000] [8186] [INFO] Booting worker with pid: 8186
+[2017-06-08 20:21:34 +0000] [8186] [INFO] Worker exiting (pid: 8186)
+[2017-06-08 20:21:34 +0000] [8320] [INFO] Booting worker with pid: 8320
+[2017-06-08 20:22:24 +0000] [8320] [INFO] Worker exiting (pid: 8320)
+[2017-06-08 20:22:24 +0000] [8321] [INFO] Booting worker with pid: 8321
+[2017-06-08 21:06:05 +0000] [8321] [INFO] Worker exiting (pid: 8321)
+[2017-06-08 21:06:05 +0000] [8581] [INFO] Booting worker with pid: 8581
+[2017-06-08 21:25:15 +0000] [8581] [INFO] Worker exiting (pid: 8581)
+[2017-06-08 21:25:15 +0000] [8673] [INFO] Booting worker with pid: 8673
+[2017-06-08 21:38:44 +0000] [8673] [INFO] Worker exiting (pid: 8673)
+[2017-06-08 21:38:44 +0000] [8755] [INFO] Booting worker with pid: 8755
+[2017-06-08 22:05:01 +0000] [8755] [INFO] Worker exiting (pid: 8755)
+[2017-06-08 22:05:01 +0000] [8913] [INFO] Booting worker with pid: 8913
+[2017-06-08 23:16:30 +0000] [8913] [INFO] Worker exiting (pid: 8913)
+[2017-06-08 23:16:30 +0000] [9375] [INFO] Booting worker with pid: 9375
+[2017-06-08 23:34:13 +0000] [9375] [INFO] Worker exiting (pid: 9375)
+[2017-06-08 23:34:13 +0000] [9480] [INFO] Booting worker with pid: 9480
+[2017-06-08 23:53:56 +0000] [9480] [INFO] Worker exiting (pid: 9480)
+[2017-06-08 23:53:56 +0000] [9582] [INFO] Booting worker with pid: 9582
+[2017-06-08 23:57:10 +0000] [9582] [INFO] Worker exiting (pid: 9582)
+[2017-06-08 23:57:10 +0000] [9586] [INFO] Booting worker with pid: 9586
+[2017-06-09 00:20:45 +0000] [9586] [INFO] Worker exiting (pid: 9586)
+[2017-06-09 00:20:45 +0000] [9803] [INFO] Booting worker with pid: 9803
+[2017-06-09 00:34:42 +0000] [9803] [INFO] Worker exiting (pid: 9803)
+[2017-06-09 00:34:42 +0000] [9882] [INFO] Booting worker with pid: 9882
+[2017-06-09 01:24:46 +0000] [9882] [INFO] Worker exiting (pid: 9882)
+[2017-06-09 01:24:47 +0000] [10157] [INFO] Booting worker with pid: 10157
+[2017-06-09 01:35:20 +0000] [10157] [INFO] Worker exiting (pid: 10157)
+[2017-06-09 01:35:20 +0000] [10218] [INFO] Booting worker with pid: 10218
+[2017-06-09 01:59:41 +0000] [10218] [INFO] Worker exiting (pid: 10218)
+[2017-06-09 01:59:41 +0000] [10340] [INFO] Booting worker with pid: 10340
+[2017-06-09 02:09:21 +0000] [10340] [INFO] Worker exiting (pid: 10340)
+[2017-06-09 02:09:21 +0000] [10408] [INFO] Booting worker with pid: 10408
+[2017-06-09 02:41:45 +0000] [10408] [INFO] Worker exiting (pid: 10408)
+[2017-06-09 02:41:45 +0000] [10569] [INFO] Booting worker with pid: 10569
+[2017-06-09 04:17:38 +0000] [10569] [INFO] Worker exiting (pid: 10569)
+[2017-06-09 04:17:38 +0000] [11110] [INFO] Booting worker with pid: 11110
+[2017-06-09 06:03:57 +0000] [11110] [INFO] Worker exiting (pid: 11110)
+[2017-06-09 06:03:57 +0000] [11749] [INFO] Booting worker with pid: 11749
+[2017-06-09 06:47:17 +0000] [11749] [INFO] Worker exiting (pid: 11749)
+[2017-06-09 06:47:17 +0000] [12172] [INFO] Booting worker with pid: 12172
+[2017-06-09 07:14:15 +0000] [12172] [INFO] Worker exiting (pid: 12172)
+[2017-06-09 07:14:15 +0000] [12334] [INFO] Booting worker with pid: 12334
+[2017-06-09 07:32:03 +0000] [12334] [INFO] Worker exiting (pid: 12334)
+[2017-06-09 07:32:03 +0000] [12440] [INFO] Booting worker with pid: 12440
+[2017-06-09 07:53:25 +0000] [12440] [INFO] Worker exiting (pid: 12440)
+[2017-06-09 07:53:25 +0000] [12546] [INFO] Booting worker with pid: 12546
+[2017-06-09 08:46:16 +0000] [12546] [INFO] Worker exiting (pid: 12546)
+[2017-06-09 08:46:16 +0000] [12849] [INFO] Booting worker with pid: 12849
+[2017-06-09 09:04:08 +0000] [12849] [INFO] Worker exiting (pid: 12849)
+[2017-06-09 09:04:08 +0000] [12974] [INFO] Booting worker with pid: 12974
+[2017-06-09 09:04:08 +0000] [12974] [INFO] Worker exiting (pid: 12974)
+[2017-06-09 09:04:08 +0000] [12975] [INFO] Booting worker with pid: 12975
+[2017-06-09 09:24:17 +0000] [12975] [INFO] Worker exiting (pid: 12975)
+[2017-06-09 09:24:17 +0000] [13081] [INFO] Booting worker with pid: 13081
+[2017-06-09 09:53:48 +0000] [13081] [INFO] Worker exiting (pid: 13081)
+[2017-06-09 09:53:48 +0000] [13227] [INFO] Booting worker with pid: 13227
+[2017-06-09 11:03:58 +0000] [13227] [INFO] Worker exiting (pid: 13227)
+[2017-06-09 11:03:59 +0000] [13666] [INFO] Booting worker with pid: 13666
+[2017-06-09 11:50:15 +0000] [13666] [INFO] Worker exiting (pid: 13666)
+[2017-06-09 11:50:15 +0000] [14462] [INFO] Booting worker with pid: 14462
+[2017-06-09 12:12:19 +0000] [21226] [INFO] Handling signal: term
+[2017-06-09 12:12:19 +0000] [14462] [INFO] Worker exiting (pid: 14462)
+[2017-06-09 12:12:19 +0000] [21226] [INFO] Shutting down: Master
+[2017-06-09 12:12:25 +0000] [14817] [INFO] Starting gunicorn 19.7.1
+[2017-06-09 12:12:25 +0000] [14817] [INFO] Listening at: http://127.0.0.1:8000 (14817)
+[2017-06-09 12:12:25 +0000] [14817] [INFO] Using worker: sync
+[2017-06-09 12:12:25 +0000] [14882] [INFO] Booting worker with pid: 14882
+[2017-06-09 12:14:50 +0000] [14882] [INFO] Worker exiting (pid: 14882)
+[2017-06-09 12:14:50 +0000] [14945] [INFO] Booting worker with pid: 14945

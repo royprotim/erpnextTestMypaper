@@ -1,79 +1,66 @@
-  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
-    "__main__", fname, loader, pkg_name)
-  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
-    exec code in run_globals
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 79, in <module>
-    main()
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 16, in main
-    click.Group(commands=commands)(prog_name='bench')
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 722, in __call__
-    return self.main(*args, **kwargs)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 697, in main
-    rv = self.invoke(ctx)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 895, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 535, in invoke
-    return callback(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 157, in start_worker
-    start_worker(queue)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 106, in start_worker
-    Worker(queues, name=get_worker_name(queue)).work()
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 433, in work
-    self.register_birth()
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 250, in register_birth
-    if self.connection.exists(self.key) and \
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 855, in exists
-    return self.execute_command('EXISTS', name)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 578, in execute_command
-    connection.send_command(*args)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 563, in send_command
-    self.send_packed_command(self.pack_command(*args))
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 538, in send_packed_command
-    self.connect()
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 442, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 99 connecting to localhost:11000. Cannot assign requested address.
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
-    "__main__", fname, loader, pkg_name)
-  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
-    exec code in run_globals
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 79, in <module>
-    main()
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 16, in main
-    click.Group(commands=commands)(prog_name='bench')
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 722, in __call__
-    return self.main(*args, **kwargs)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 697, in main
-    rv = self.invoke(ctx)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 1066, in invoke
-    return _process_result(sub_ctx.command.invoke(sub_ctx))
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 895, in invoke
-    return ctx.invoke(self.callback, **ctx.params)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/click/core.py", line 535, in invoke
-    return callback(*args, **kwargs)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/commands/scheduler.py", line 157, in start_worker
-    start_worker(queue)
-  File "/home/frappe/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 106, in start_worker
-    Worker(queues, name=get_worker_name(queue)).work()
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 433, in work
-    self.register_birth()
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/rq/worker.py", line 250, in register_birth
-    if self.connection.exists(self.key) and \
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 855, in exists
-    return self.execute_command('EXISTS', name)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/client.py", line 578, in execute_command
-    connection.send_command(*args)
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 563, in send_command
-    self.send_packed_command(self.pack_command(*args))
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 538, in send_packed_command
-    self.connect()
-  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 442, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 99 connecting to localhost:11000. Cannot assign requested address.
+06:01:45 long: Job OK (ecf20c0c-8cb7-41e5-aaee-01646ec74e99)
+06:01:45 Result is kept for 500 seconds
+06:01:45 Cleaning registries for queue: long
+06:01:45 
+06:01:45 *** Listening on long...
+07:01:50 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (a2007b0d-3b97-4419-a5f1-42e8feaf3a49)
+07:01:50 long: Job OK (a2007b0d-3b97-4419-a5f1-42e8feaf3a49)
+07:01:50 Result is kept for 500 seconds
+07:01:50 Cleaning registries for queue: long
+07:01:50 
+07:01:50 *** Listening on long...
+08:01:54 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (e9c00612-279a-4380-a418-cdb5ec09b301)
+08:01:55 long: Job OK (e9c00612-279a-4380-a418-cdb5ec09b301)
+08:01:55 Result is kept for 500 seconds
+08:01:55 Cleaning registries for queue: long
+08:01:55 
+08:01:55 *** Listening on long...
+09:01:59 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (242d2858-7bd5-4f58-a688-4a590cb4955a)
+09:01:59 long: Job OK (242d2858-7bd5-4f58-a688-4a590cb4955a)
+09:01:59 Result is kept for 500 seconds
+09:01:59 Cleaning registries for queue: long
+09:01:59 
+09:01:59 *** Listening on long...
+10:02:03 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (139f69e0-5cf5-47ff-bdab-1a4f032c636e)
+10:02:04 long: Job OK (139f69e0-5cf5-47ff-bdab-1a4f032c636e)
+10:02:04 Result is kept for 500 seconds
+10:02:04 Cleaning registries for queue: long
+10:02:04 
+10:02:04 *** Listening on long...
+11:02:08 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (bd7bbbcb-4de5-477b-8ed7-c076727e1f6a)
+11:02:08 long: Job OK (bd7bbbcb-4de5-477b-8ed7-c076727e1f6a)
+11:02:08 Result is kept for 500 seconds
+11:02:08 Cleaning registries for queue: long
+11:02:08 
+11:02:08 *** Listening on long...
+12:02:12 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (73e2a028-ba8f-4536-a2bd-259829f77c93)
+12:02:14 long: Job OK (73e2a028-ba8f-4536-a2bd-259829f77c93)
+12:02:14 Result is kept for 500 seconds
+12:02:14 Cleaning registries for queue: long
+12:02:14 
+12:02:14 *** Listening on long...
+13:02:17 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (86386d37-b655-4782-bec2-15600a9f133a)
+13:02:17 long: Job OK (86386d37-b655-4782-bec2-15600a9f133a)
+13:02:17 Result is kept for 500 seconds
+13:02:17 Cleaning registries for queue: long
+13:02:17 
+13:02:17 *** Listening on long...
+14:02:21 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (74d54563-ec28-4853-8e15-78d162fb4277)
+14:02:22 long: Job OK (74d54563-ec28-4853-8e15-78d162fb4277)
+14:02:22 Result is kept for 500 seconds
+14:02:22 Cleaning registries for queue: long
+14:02:22 
+14:02:22 *** Listening on long...
+15:02:26 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (5ec06105-424a-4cb7-93bc-0b71fe2b46f9)
+15:02:26 long: Job OK (5ec06105-424a-4cb7-93bc-0b71fe2b46f9)
+15:02:26 Result is kept for 500 seconds
+15:02:26 Cleaning registries for queue: long
+15:02:26 
+15:02:26 *** Listening on long...
+16:02:30 long: frappe.utils.background_jobs.execute_job(async=True, event=None, job_name=u'erpnext_shopify.api.sync_shopify_resources', kwargs={}, method=u'erpnext_shopify.api.sync_shopify_resources', site=u'mypaper.co.in', user=u'Administrator') (91cc99ef-f75f-43d7-a176-2b86c9e9d53a)
+16:02:31 long: Job OK (91cc99ef-f75f-43d7-a176-2b86c9e9d53a)
+16:02:31 Result is kept for 500 seconds
+16:02:31 Cleaning registries for queue: long
+16:02:31 
+16:02:31 *** Listening on long...
+16:52:27 Warm shut down requested
